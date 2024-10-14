@@ -16,9 +16,14 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo-link" href="index.html">
-        <img class="main-header__logo-image" src="" alt="Логотип продукции Cat Energy.">
-        <img class="main-header__logo-text" src="" alt="">
+      <a class="main-header__logo-link" href="index.html" aria-current="page">
+        <picture>
+          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+          <img class="main-header__logo" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип продукции Cat Energy.">
+        </picture>
+
+        <img class="main-header__logo-text" src="images/logo/footer-logo.svg" width="101" height="18" alt="">
       </a>
 
       <nav class="main-nav">
@@ -117,7 +122,9 @@
       <div class="office-address__map map">
         <div class="map__image">
           <picture>
-            <img class="" src="" width="" height="" alt="Координаты офиса компании Cat Energy.">
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Координаты офиса компании Cat Energy.">
           </picture>
         </div>
         <div class="map__google">
@@ -127,7 +134,7 @@
     </section>
 
     <a class="main-footer__logo-link" href="index.html" aria-current="page">
-      <img class="main-footer__logo-text" src="" width="" height="" alt="Логотип Cat Energy.">
+      <img class="main-footer__logo-text" src="images/logo/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy.">
     </a>
 
     <ul class="main-footer__socials socials">
@@ -156,7 +163,7 @@
     <div class="main-footer__html-academy-logo html-academy-logo">
       <a class="html-academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="html-academy-logo__text">HTML Academy</p>
-        <img class="html-academy-logo__image" src="" width="" height="" alt="Переход на сайт HTML Academy.">
+        <img class="html-academy-logo__image" src="images/logo/html-academy-logo.svg" width="27" height="34" alt="Переход на сайт HTML Academy.">
       </a>
     </div>
   </footer>
