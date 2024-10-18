@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,8 +18,13 @@
     <div class="main-header__wrapper">
 
       <a class="main-header__logo-link" href="index.html" aria-current="page">
-        <img class="main-header__logo" src="" alt="Логотип продукции Cat Energy.">
-        <img class="main-header__logo-text" src="" alt="">
+        <picture>
+          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+          <img class="main-header__logo" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип продукции Cat Energy.">
+        </picture>
+
+        <img class="main-header__logo-text" src="images/logo/footer-logo.svg" width="101" height="18" alt="" aria-hidden="true">
       </a>
 
       <nav class="main-nav">
@@ -106,8 +115,15 @@
           <button class="slider__button" type="button">
             <span class="visually-hidden">Ползунок слайдера</span>
           </button>
-          <img class="slider__image slider__image-before" src="" width="" height="" alt="Кот Борис до корма Cat Energy Slim.">
-          <img class="slider__image slider__image-after" src="" width="" height="" alt="Кот Борис после корма Cat Energy Slim.">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-cat1@1x.png 1x, images/slider/slider-before-cat1@2x.png 2x">
+            <img class="slider__image slider__image-before" src="images/slider/slider-before-cat1-mobile@1x.png" srcset="images/slider/slider-before-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до корма Cat Energy Slim - тучный.">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-cat1@1x.png 1x, images/slider/slider-after-cat1@2x.png 2x">
+            <img class="slider__image slider__image-after" src="images/slider/slider-after-cat1-mobile@1x.png" srcset="images/slider/slider-after-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после корма Cat Energy Slim - здоровый.">
+          </picture>
+
         </div>
       </div>
     </section>
@@ -125,7 +141,9 @@
       <div class="office-address__map map">
         <div class="map__image">
           <picture>
-            <img class="" src="" width="" height="" alt="Координаты офиса компании Cat Energy.">
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Координаты офиса компании Cat Energy.">
           </picture>
         </div>
         <div class="map__google">
@@ -135,7 +153,7 @@
     </section>
 
     <a class="main-footer__logo-link" href="index.html" aria-current="page">
-      <img class="main-footer__logo-text" src="" width="" height="" alt="Логотип Cat Energy.">
+      <img class="main-footer__logo-text" src="images/logo/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy.">
     </a>
 
     <ul class="main-footer__socials socials">
@@ -164,7 +182,7 @@
     <div class="main-footer__html-academy-logo html-academy-logo">
       <a class="html-academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="html-academy-logo__text">HTML Academy</p>
-        <img class="html-academy-logo__image" src="" width="" height="" alt="Переход на сайт HTML Academy.">
+        <img class="html-academy-logo__image" src="images/logo/html-academy-logo.svg" width="27" height="34" alt="Переход на сайт HTML Academy.">
       </a>
     </div>
   </footer>
