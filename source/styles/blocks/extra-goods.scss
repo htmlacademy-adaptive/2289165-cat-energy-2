@@ -1,0 +1,27 @@
+.extra-goods {
+  background-color: $base-background-color;
+  color: $base-text-color;
+}
+
+.extra-goods__list {
+  list-style: none;
+}
+
+.extra-goods__subtitle {
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: $product-card-title-text-color;
+}
+
+
+.extra-goods__price {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+
+  & dd {
+    text-align: right;
+  }
+}

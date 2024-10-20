@@ -1,0 +1,29 @@
+.products {
+  background-color: $base-background-color;
+  color: $base-text-color;
+}
+
+.products__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $extra-text-color;
+}
+
+.products__list {
+  list-style: none;
+}
+
+.products__subtitle {
+  font-weight: 400;
+  color: $custom-text-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__text {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

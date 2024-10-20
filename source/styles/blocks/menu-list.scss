@@ -1,0 +1,15 @@
+.menu-list {
+  font-size: 20px;
+  background-color: $base-background-color;
+  list-style: none;
+}
+
+.menu-list__item {
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  color: $extra-text-color;
+}

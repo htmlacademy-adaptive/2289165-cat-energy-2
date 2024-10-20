@@ -1,0 +1,49 @@
+.hero {
+  background-color: $base-background-color;
+  color: $extra-text-color;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $base-decor-color-white;
+  background-color: $base-decor-color-green;
+
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $extra-text-color;
+    background-color: $base-background-color;
+  }
+}
+
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $base-decor-color-white;
+  background-color: $base-decor-color-green;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $extra-text-color;
+    background-color: $base-background-color;
+  }
+}
+
+.hero__select-program {
+  color: $base-decor-color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

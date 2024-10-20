@@ -1,0 +1,25 @@
+.example {
+  background-color: $custom-background-color;
+  color: $base-text-color;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $extra-text-color;
+  text-align: center;
+}
+
+.example__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__food-costs {
+  font-size: 14px;
+  color: $extra-text-color;
+  text-align: center;
+  text-transform: uppercase;
+}

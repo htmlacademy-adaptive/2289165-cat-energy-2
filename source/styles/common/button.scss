@@ -1,0 +1,15 @@
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button--primary {
+  background-color: $base-decor-color-green;
+  color: $base-decor-color-white;
+}
+
+.button--secondary {
+  background-color: $extra-background-color;
+  color: $base-text-color;
+}

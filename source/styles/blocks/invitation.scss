@@ -1,0 +1,15 @@
+.invitation {
+  background-color: $base-background-color;
+  color: $base-text-color;
+}
+
+.invitation__title {
+  font-weight: 400;
+  color: $custom-text-color;
+  text-transform: uppercase;
+}
+
+.invitation__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+}

@@ -1,0 +1,22 @@
+.algorithm {
+  background-color: $base-background-color;
+  color: $base-text-color;
+}
+
+.algorithm__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $extra-text-color;
+  text-align: center;
+}
+
+.algorithm__list {
+  font-family: $secondary-font;
+  font-size: 14px;
+  list-style: none;
+}
+
+.algorithm__item {
+  line-height: 18px;
+}

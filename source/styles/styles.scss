@@ -1,7 +1,37 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+@import "./common/button.scss";
+@import "./common/form.scss";
+@import "./common/field.scss";
+@import "./common/common-title.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/menu-list.scss";
+@import "./blocks/main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/algorithm.scss";
+@import "./blocks/example.scss";
+@import "./blocks/resume.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/office-address.scss";
+@import "./blocks/invitation.scss";
+@import "./blocks/map.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/html-academy-logo.scss";
+@import "./blocks/select-program.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/extra-goods.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/program-selection.scss";
