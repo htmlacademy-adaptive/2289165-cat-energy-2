@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__wrapper">
 
@@ -82,7 +83,7 @@
         <li class="algorithm__item algorithm__item--eco">
           <p class="algorithm__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="algorithm__item algorithm__item--fast">
+        <li class="algorithm__item algorithm__item--powder">
           <p class="algorithm__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="algorithm__item algorithm__item--food">
@@ -117,11 +118,11 @@
           </button>
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-cat1@1x.png 1x, images/slider/slider-before-cat1@2x.png 2x">
-            <img class="slider__image slider__image-before" src="images/slider/slider-before-cat1-mobile@1x.png" srcset="images/slider/slider-before-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до корма Cat Energy Slim - тучный.">
+            <img class="slider__image slider__image--before" src="images/slider/slider-before-cat1-mobile@1x.png" srcset="images/slider/slider-before-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до корма Cat Energy Slim - тучный.">
           </picture>
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-cat1@1x.png 1x, images/slider/slider-after-cat1@2x.png 2x">
-            <img class="slider__image slider__image-after" src="images/slider/slider-after-cat1-mobile@1x.png" srcset="images/slider/slider-after-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после корма Cat Energy Slim - здоровый.">
+            <img class="slider__image slider__image--after" src="images/slider/slider-after-cat1-mobile@1x.png" srcset="images/slider/slider-after-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после корма Cat Energy Slim - здоровый.">
           </picture>
 
         </div>
@@ -159,21 +160,18 @@
     <ul class="main-footer__socials socials">
       <li class="socials__item">
         <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
-          <svg class="socials__icon" src="" width="" height="" aria-hidden="true"></svg>
           <span class="visually-hidden">Мы в Вконтакте.</span>
         </a>
       </li>
 
       <li class="socials__item">
         <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <svg class="socials__icon" src="" width="" height="" aria-hidden="true"></svg>
           <span class="visually-hidden">Мы в Youtube.</span>
         </a>
       </li>
 
       <li class="socials__item">
-        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy ">
-          <svg class="socials__icon" src="" width="" height="" aria-hidden="true"></svg>
+        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Мы в Телеграм.</span>
         </a>
       </li>
@@ -182,10 +180,10 @@
     <div class="main-footer__html-academy-logo html-academy-logo">
       <a class="html-academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="html-academy-logo__text">HTML Academy</p>
-        <img class="html-academy-logo__image" src="images/logo/html-academy-logo.svg" width="27" height="34" alt="Переход на сайт HTML Academy.">
       </a>
     </div>
   </footer>
+  <!-- <script src="scripts/index.js" defer></script> -->
 
 </body>
 

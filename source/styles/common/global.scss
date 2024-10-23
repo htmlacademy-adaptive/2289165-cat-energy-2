@@ -1,4 +1,10 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $primary-font;
   font-weight: 400;
@@ -6,4 +12,5 @@ body {
   line-height: 20px;
   color: $base-text-color;
   background-color: $base-background-color;
+  margin: 0;
 }

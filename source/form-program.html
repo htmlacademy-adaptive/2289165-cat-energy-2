@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy: Program form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -79,9 +79,9 @@
           <legend class="visually-hidden">Данные о владельце.</legend>
           <h2 class="common-title">Контактные данные (владельца&nbsp;кота)</h2>
           <label class="form__label" for="email">E-mail:*</label>
-          <input class="form__input field" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
+          <input class="form__input field field--email" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
           <label class="form__label" for="phone">Телефон:*</label>
-          <input class="form__input field" type="text" id="phone" name="phone" value="8(960)900-60-90" required>
+          <input class="form__input field field--phone" type="text" id="phone" name="phone" value="8(960)900-60-90" required>
         </fieldset>
 
         <fieldset class="form__program">
@@ -140,21 +140,18 @@
     <ul class="main-footer__socials socials">
       <li class="socials__item">
         <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
-          <svg class="socials__icon" src="" width="" height="" aria-hidden="true"></svg>
           <span class="visually-hidden">Мы в Вконтакте.</span>
         </a>
       </li>
 
       <li class="socials__item">
         <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <svg class="socials__icon" src="" width="" height="" aria-hidden="true"></svg>
           <span class="visually-hidden">Мы в Youtube.</span>
         </a>
       </li>
 
       <li class="socials__item">
-        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy ">
-          <svg class="socials__icon" src="" width="" height="" aria-hidden="true"></svg>
+        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Мы в Телеграм.</span>
         </a>
       </li>
@@ -163,7 +160,6 @@
     <div class="main-footer__html-academy-logo html-academy-logo">
       <a class="html-academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="html-academy-logo__text">HTML Academy</p>
-        <img class="html-academy-logo__image" src="images/logo/html-academy-logo.svg" width="27" height="34" alt="Переход на сайт HTML Academy.">
       </a>
     </div>
   </footer>
