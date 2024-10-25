@@ -1,1 +1,14 @@
-// to-do
+.main-nav__toggle {
+  background-color: $base-background-color;
+  background-image: url("../../icons/stack.svg#menu-mobile");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+.main-nav__toggle--close {
+  background-image: url("../../icons/stack.svg#menu-close-mobile");
+  background-size: 18px 18px;
+}

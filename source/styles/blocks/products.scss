@@ -3,6 +3,12 @@
   color: $base-text-color;
 }
 
+.products__item--more {
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
 .products__title {
   font-weight: 400;
   font-size: 36px;

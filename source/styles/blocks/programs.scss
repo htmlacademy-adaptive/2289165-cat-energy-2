@@ -6,6 +6,39 @@
 .programs__item {
   background-color: $extra-background-color;
   list-style: none;
+  position: relative;
+}
+
+.programs__item::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: $base-decor-color-green;
+  border-radius: 50%;
+  left: 20px;
+  top: 24px;
+  display: block;
+}
+
+.programs__item--weight-loss::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  width: 36px;
+  height: 50px;
+  left: 27px;
+  top: 21px;
+}
+
+.programs__item--weight-gain::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 28px;
+  left: 12px;
+  top: 35px;
 }
 
 .programs__subtitle {
@@ -23,9 +56,22 @@
 }
 
 .programs__link {
+  position: relative;
   line-height: 16px;
   color: $extra-text-color;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+
+.programs__link::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#arrow-right");
+  mask-repeat: no-repeat;
+  mask-size: 24px 12px;
+  width: 32px;
+  height: 12px;
+  background-color: $extra-text-color;
+  mask-position: 100%;
 }

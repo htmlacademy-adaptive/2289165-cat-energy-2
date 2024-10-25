@@ -1,9 +1,25 @@
 .promo {
   background-color: $base-decor-color-green;
   color: $base-decor-color-white;
+  width: 280px;
+  height: 290px;
+  padding: 187px 58px 40px;
 }
 
 .promo__text {
   font-family: $secondary-font;
   text-align: center;
+  position: relative;
+}
+
+.promo__text::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#gift");
+  width: 78px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -128px;
 }
