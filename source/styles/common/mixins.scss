@@ -1,8 +1,7 @@
-@use "sass:string";
 
 @mixin font-face($font-family, $font-weight, $font-style, $font-src) {
   @font-face {
-    font-family: string.quote($font-family);
+    font-family: $font-family;
     font-weight: $font-weight;
     font-style: $font-style;
     font-display: swap;

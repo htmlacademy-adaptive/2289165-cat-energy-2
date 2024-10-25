@@ -6,6 +6,27 @@
 .html-academy-logo__link {
   text-decoration: none;
   color: $base-text-color;
+  position: relative;
+
+  &::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#html-academy-logo");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    background-color: #666666;
+    left: 136px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $base-decor-color-green;
+  }
 
   &:active {
     opacity: 0.3;
@@ -16,25 +37,4 @@
   font-family: $secondary-font;
   position: relative;
   width: 113px;
-}
-
-.html-academy-logo__text::after {
-  content: "";
-  mask-image: url("../../icons/stack.svg#html-academy-logo");
-  mask-repeat: no-repeat;
-  mask-size: 27px 34px;
-  width: 27px;
-  height: 34px;
-  position: absolute;
-  background-color: #666666;
-  left: 136px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $base-decor-color-green;
-  }
 }
