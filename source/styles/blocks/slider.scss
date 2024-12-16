@@ -1,7 +1,12 @@
 .slider {
   width: 280px;
   height: 256px;
+
+  // width: 560px;
+  // height: 512px;
   position: relative;
+  outline: 2px solid blueviolet;
+  justify-self: center;
 }
 
 .slider__button {
@@ -48,18 +53,51 @@
 
 
 .slider__image {
-  width: 100%;
+  width: 280px; //? почему при 100% кот обрезается по-центру
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 
-.slider__image--before {
-  width: 100%;
+// .slider__image--before {
+//   width: 100%;width
+//   left: 0;left
+//   top: 0;top
+//   position: absolute;position
+//   z-index: 2;z-index
+//   height: 100%;height
+// }
+
+.slider__wrapper-before {
+  width: 50%;
   left: 0;
   top: 0;
   position: absolute;
   z-index: 2;
   height: 100%;
+  overflow: hidden;
+  background-color: $extra-background-color;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 560px;
+    height: 512px;
+  }
+
+  .slider__image {
+    width: 560px;
+  }
+
+  .slider__wrapper-before {
+    background-image: linear-gradient(to bottom, $base-background-color 137px, $extra-background-color 137px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: absolute;
+    top: 0;
+    right: 110px;
+  }
 }

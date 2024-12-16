@@ -1,6 +1,7 @@
 .algorithm {
   background-color: $base-background-color;
   color: $base-text-color;
+  padding: 20px 20px 49px;
 }
 
 .algorithm__title {
@@ -8,20 +9,29 @@
   font-size: 36px;
   line-height: 40px;
   color: $extra-text-color;
-  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .algorithm__list {
   font-family: $secondary-font;
   font-size: 14px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .algorithm__item {
   position: relative;
   line-height: 18px;
-  height: 70px;
+  min-height: 60px;
+  margin-bottom: 20px;
 }
+
+.algorithm__item:last-of-type {
+  margin-bottom: 0;
+}
+
 
 .algorithm__item::before {
   content: "";
@@ -51,5 +61,77 @@
 
 .algorithm__item--time::before {
   background-image: url("../../icons/stack.svg#time");
-  background-size: 26px 28.5px;
+  background-size: 26px 31px;
+}
+
+.algorithm__text {
+  padding-left: 80px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin: 0;
+  position: relative;
+  z-index: 5;
+}
+
+
+@media (min-width: $tablet-width) {
+  .algorithm {
+    padding: 45px 30px 46px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .algorithm__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .algorithm__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 47px;
+    font-size: 16px;
+    line-height: 24px;
+    justify-content: space-between;
+  }
+
+  .algorithm__item {
+    min-height: 240px;
+    width: 250px;
+    margin-bottom: 0;
+  }
+
+  .algorithm__item::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .algorithm__item::after {
+    content: attr(data-item-number);
+    width: 136px;
+    height: 280px;
+    display: block;
+    color: $extra-background-color;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    top: -40px;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: $primary-font;
+  }
+
+  .algorithm__text {
+    padding-left: 0;
+    padding-top: 111px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .algorithm {
+    padding: 71px 110px 69px;
+    border-color: transparent;
+  }
 }
