@@ -3,21 +3,66 @@
   color: $extra-text-color;
 }
 
+.hero__wrapper {
+  position: relative;
+  min-height: 440px;
+  margin-bottom: 20px;
+
+  // background-image: linear-gradient(to right, #515056 50%, #424146 50%);background-imagebackground-image
+  background-image: linear-gradient(#515056 302px, $base-background-color 302px);//414045
+}
+
+.hero__container {
+  position: relative;
+  background-image: url("../../images/hero/hero-background-cat-mobile@2x.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+
+  padding-top: 27px;
+  padding-bottom: 135px;
+  min-height: 302px;
+
+  // @media (min-width: $tablet-width) {
+  //   box-shadow: inset 0 0 0 1000px $base-background-color;box-shadowbox-shadowbox-shadowbox-shadow
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   background-image: linear-gradient(to right, $base-decor-color-green 50%, $base-decor-color-white 50%), url("../../images/hero/hero-background-cat-desktop@2x.jpg");background-imagebackground-imagebackground-image
+  //   // box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);box-shadowbox-shadowbox-shadowbox-shadow
+
+  //   background-size: cover, 720px 694px;background-sizebackground-sizebackground-size
+  //   background-position: center top, right center;background-positionbackground-positionbackground-position
+  //   min-height: 694px;min-heightmin-heightmin-height
+  // }
+}
+
+.hero__container::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../images/hero/hero-can-mobile@1x.png");
+  background-size: 280px 270px;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 270px;
+  bottom: -138px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .hero__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: $base-decor-color-white;
-  background-color: $base-decor-color-green;
+  margin: 0 35px 25px;//15=35
 
-
-  @media (min-width: 768px) {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    color: $extra-text-color;
-    background-color: $base-background-color;
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -25,15 +70,9 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
   color: $base-decor-color-white;
-  background-color: $base-decor-color-green;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 20px;
-    color: $extra-text-color;
-    background-color: $base-background-color;
-  }
+  margin: 0 40px;//20=40
 }
 
 .hero__select-program {
@@ -41,9 +80,85 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 138px;
 
-  @media (min-width: 768px) {
+
+  // @media (min-width: $tablet-width) {
+  //   font-size: 20px;font-sizefont-sizefont-size
+  //   line-height: 26px;line-heightline-heightline-height
+  // }
+}
+
+
+
+
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    margin-bottom: 0;
+  }
+
+  .hero__container {
+    box-shadow: inset 0 0 0 1000px $base-background-color;
+  }
+
+  .hero__container::after {
+    background-color: $base-background-color;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $extra-text-color;
+    width: 420px;
+    margin-top: 65px;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $extra-text-color;
+  }
+
+  .hero__select-program {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__wrapper {
+    margin-bottom: 82px;
+    background-image: url("../../images/hero/hero-background-cat-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    // background-size: cover, 720px 694px;
+
+    background-position: 100% 0;
+    background-size: 50vw 100%;
+    top: -250px;
+    min-height: 694px;
+    z-index: -1;
+  }
+
+  // .hero__container {
+  //   position: absolute;position
+  //   background-image: url("../../images/hero/hero-background-cat-desktop@2x.jpg");background-image
+
+
+  //   background-size: cover;background-size
+  //   min-height: 694px;min-height
+  //   box-shadow: inset 0 0 0 1000px rgba(104, 183, 56, 0.85);box-shadow
+  //   left: 50%;left
+  //   top: 0;top
+  //   z-index: -1;z-index
+  // }
+
+  .hero__container {
+    position: absolute;
+    top: 200px;
+    z-index: 2;
   }
 }

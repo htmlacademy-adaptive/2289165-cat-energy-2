@@ -1,16 +1,26 @@
 .resume {
-  background-color: $custom-background-color;
+  background-color: inherit;
   color: $base-text-color;
+  margin: 0;
+  display: flex;
+  gap: 32px;
 }
 
 .resume__item {
   text-align: center;
+  position: relative;
+  min-width: 124px;
 
   & dt {
     font-family: $secondary-font;
     font-size: 12px;
     line-height: 12px;
     text-transform: lowercase;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
   }
 
   & dd {
@@ -18,5 +28,42 @@
     line-height: 24px;
     color: $extra-text-color;
     text-transform: uppercase;
+    margin: 0;
+    padding: 14.5px 5px 17.5px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  & dd::after {
+    content: "";
+    width: 87px;
+    height: 20px;
+    background-color: red; //inherit;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  } //почему псевдоэлемент не перекрывает родителя через z-index
+}
+
+
+@media (min-width: $tablet-width) {
+  .resume {
+    gap: 42px;
+  }
+
+  .resume__item {
+    min-width: 162px;
+  }
+
+  .resume__item dt {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .resume__item dd {
+    font-size: 30px;
+    line-height: 37px;
   }
 }
