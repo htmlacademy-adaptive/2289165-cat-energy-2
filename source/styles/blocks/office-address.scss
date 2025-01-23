@@ -1,1 +1,24 @@
-// to-do
+// .office-address__map {}
+
+.office-address__wrapper {
+  padding: 26px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .office-address__wrapper {
+    padding: 60px 70px;
+  }
+}
+
+@media (min-width: $deasktop-width) {
+  .office-address {
+    position: relative;
+  }
+
+  .office-address__wrapper {
+    position: absolute;
+    padding: 60px 80px;
+    top: 95px;
+    left: 110px;
+  }
+}
