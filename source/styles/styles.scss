@@ -4,13 +4,21 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
-@import "./common/button.scss";
-@import "./common/form.scss";
-@import "./common/field.scss";
-@import "./common/common-title.scss";
+@import "./common/form.scss"; //??
+
+
+/* COMPONENTS */
+@import "./components/button.scss";
+@import "./components/inner-title.scss";
+@import "./components/inner-text.scss";
+@import "./components/input-text.scss";
+@import "./components/radio.scss";
+@import "./components/special-title.scss";
+@import "./components/textarea.scss";
+@import "./components/checkbox.scss";
+
 
 /* BLOCKS */
-
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
@@ -35,3 +43,12 @@
 @import "./blocks/promo.scss";
 @import "./blocks/subscription.scss";
 @import "./blocks/program-selection.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/pet-group.scss";
+@import "./blocks/form/program-group.scss";
+@import "./blocks/form/owner-group.scss";
+@import "./blocks/form/comment-group.scss";
+@import "./blocks/form/extra-group.scss";
+@import "./blocks/form/control-group.scss";
+
+

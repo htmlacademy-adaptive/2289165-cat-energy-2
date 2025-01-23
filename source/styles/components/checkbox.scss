@@ -1,0 +1,40 @@
+// .checkbox {}
+
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  min-height: 30px;
+  padding-top: 6px;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #cdcdcd;
+  }
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    // fill: #68b738; //to-do
+    top: 6px;
+    left: 4px;
+    // display: none;
+    background-image: url("../../icons/stack.svg#icon-tick");
+  }
+}
+
+.checkbox__input:checked + .checkbox__label::after {//to-do
+  display: block;
+}
