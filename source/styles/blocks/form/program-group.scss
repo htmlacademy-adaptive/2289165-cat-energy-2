@@ -1,0 +1,21 @@
+.program-group {
+  padding: 22px 20px 18px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+// .program-group__list {}
+.program-group__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-group {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-group {
+    margin-bottom: 70px;
+  }
+}

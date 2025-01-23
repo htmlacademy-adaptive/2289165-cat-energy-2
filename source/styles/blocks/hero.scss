@@ -70,7 +70,6 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  display: block;
   margin: 138px 20px 0;
 }
 
@@ -148,7 +147,7 @@
   .hero {
     position: relative;
     z-index: -1;
-    width: 1440px;
+    // width: 1440px;
     margin: 0 auto;
   }
 
@@ -160,7 +159,7 @@
     background-repeat: no-repeat;
     background-position: -60px -10px;
     background-color: #4f4e52;
-    width: 720px;
+    width: 50%;
     height: calc(100% + 115px - 184px);
     left: 50%;
     top: -115px;
@@ -174,7 +173,7 @@
     // background-position: 30px top;
     background-color: $base-decor-color-green;
     opacity: 0.85;
-    width: 720px;
+    width: 50%;
     height: calc(100% + 115px - 184px);
     left: 50%;
     top: -115px;
@@ -183,6 +182,8 @@
   .hero__wrapper {
     padding-top: 110px;
     padding-bottom: 184px;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .hero__wrapper::after {

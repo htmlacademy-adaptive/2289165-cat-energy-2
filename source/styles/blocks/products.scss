@@ -9,12 +9,12 @@
   background-size: 60px 60px;
 }
 
-.products__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  color: $extra-text-color;
-}
+// .products__title {
+//   font-weight: 400;
+//   font-size: 36px;
+//   line-height: 36px;
+//   color: $extra-text-color;
+// }
 
 .products__list {
   list-style: none;
@@ -33,3 +33,10 @@
   line-height: 16px;
   text-align: center;
 }
+
+
+// @media (min-width: $tablet-width) && (max-width: $desktop-width) {
+//   .products__title {
+//     margin-left: 30px;
+//   }
+// }

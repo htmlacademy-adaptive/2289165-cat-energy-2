@@ -1,0 +1,16 @@
+.control-group {
+  margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+.control-group__text {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $extra-text-color;
+  text-align: center;
+
+  padding-top: 21px;
+}

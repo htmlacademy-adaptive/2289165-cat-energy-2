@@ -1,0 +1,11 @@
+.extra-group {
+  margin-bottom: 35px;
+}
+
+.extra-group__list {
+  padding: 33px 20px 0;
+}
+
+.extra-group__item:not(:last-child) {
+  margin-bottom: 12px;
+}
