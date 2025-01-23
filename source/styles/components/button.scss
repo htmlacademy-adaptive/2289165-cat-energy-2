@@ -1,4 +1,6 @@
 .button {
+  display: block;
+  width: 100%;
   min-height: 40px;
   padding: 10px;
   border: none;
@@ -19,12 +21,4 @@
 .button--secondary {
   background-color: $extra-background-color;
   color: $base-text-color;
-}
-
-
-@media (max-width: $mobile-width-only) {
-  .button {
-    display: block;
-    width: 100%;
-  }
 }

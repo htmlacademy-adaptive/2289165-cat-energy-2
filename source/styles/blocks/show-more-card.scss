@@ -1,0 +1,22 @@
+.show-more-card {
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.show-more-card__title {
+  font-weight: 400;
+  color: $custom-text-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// .show-more-card__count {}
+
+.show-more-card__text {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
