@@ -2,3 +2,56 @@
   background-color: $extra-background-color;
   color: $base-text-color;
 }
+
+.main-footer__links-list {
+  margin: 0;
+  padding: 18px;
+  list-style: none;
+}
+
+.main-footer__links-item {
+  padding: 19px 0;
+}
+
+.main-footer__links-item:not(:last-child) {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__logo-link {
+  display: block;
+  margin: 0 auto;
+  width: 128px;
+}
+
+// .main-footer__logo-text {}
+
+// .main-footer__socials {}
+
+// .main-footer__html-academy-logo {}
+
+
+@media (min-width: $tablet-width) {
+  .main-footer__links-list {
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-footer__links-item {
+    padding: 0;
+    margin: auto 0;
+    border-bottom: none; //to-do
+  }
+
+  .main-footer__links-item:not(:last-child) {
+    border-bottom: none; //to-do
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__links-list {
+    padding: 66px 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

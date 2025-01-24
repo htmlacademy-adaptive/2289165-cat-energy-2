@@ -17,7 +17,7 @@
     height: 34px;
     position: absolute;
     background-color: #666666;
-    left: 136px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     display: block;
@@ -37,4 +37,12 @@
   font-family: $secondary-font;
   position: relative;
   width: 113px;
+  margin: 0;
+  padding: 7px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .html-academy-logo {
+    width: 168px;
+  }
 }
