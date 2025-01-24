@@ -1,5 +1,10 @@
 .socials {
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
+  display: flex;
+  gap: 24px;
+  width: 132px;
 }
 
 .socials__link {

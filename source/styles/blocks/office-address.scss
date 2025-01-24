@@ -1,16 +1,22 @@
-// .office-address__map {}
-
 .office-address__wrapper {
   padding: 26px 20px;
+}
+
+.office-address__map {
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {
   .office-address__wrapper {
     padding: 60px 70px;
   }
+
+  .office-address__map {
+    height: 400px;
+  }
 }
 
-@media (min-width: $deasktop-width) {
+@media (min-width: $desktop-width) {
   .office-address {
     position: relative;
   }
@@ -20,5 +26,12 @@
     padding: 60px 80px;
     top: 95px;
     left: 110px;
+    z-index: 5;
   }
+
+  // .office-address__map {
+  //   width: 1440px;
+  //   margin: 0 auto;
+  // }
 }
+
