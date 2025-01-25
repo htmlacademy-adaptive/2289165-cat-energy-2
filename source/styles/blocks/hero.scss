@@ -6,7 +6,7 @@
 .hero__wrapper {
   position: relative;
   min-height: 440px;
-  margin-bottom: 20px;
+  margin: 0 20px 20px;
 }
 
 .hero__container {
@@ -70,14 +70,14 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  margin: 138px 20px 0;
+  margin-top: 138px;
 }
 
 
 @media (min-width: $tablet-width) {
   .hero__wrapper {
     position: relative;
-    margin-bottom: 0;
+    margin: 0 20px;
     padding-top: 65px;
     padding-left: 120px;
     padding-bottom: 526px;

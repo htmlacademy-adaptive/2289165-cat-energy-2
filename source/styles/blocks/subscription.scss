@@ -3,7 +3,37 @@
   color: $extra-text-color;
 }
 
+.subscription__title {
+  margin-bottom: 30px;
+}
+
 .subscription__text {
+  margin: 0;
   line-height: 24px;
   text-align: center;
+  padding: 0 20px 24px;
+}
+
+.subscription__form {
+  padding: 0 20px 40px;
+}
+
+.subscription__input {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $base-text-color;
+  text-transform: uppercase;
+  min-width: 280px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+.subscription__button {
+  font-size: 20px;
+  line-height: 26px;
+  min-height: 56px;
 }
