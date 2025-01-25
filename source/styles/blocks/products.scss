@@ -1,7 +1,7 @@
 .products {
   background-color: $base-background-color;
   color: $base-text-color;
-  padding: 27px 20px 0;
+  padding-top: 27px;
 }
 
 .products__title {
@@ -9,11 +9,15 @@
 }
 
 .products__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  border-bottom: 1px solid #ebebeb;
 }
 
-// .products__item {
-// }
+.products__item {
+  border-top: 1px solid #ebebeb;
+}
 
 @media (min-width: $tablet-width) {
   .products {
