@@ -10,17 +10,20 @@
   text-align: center;
   position: relative;
   min-width: 124px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 
   & dt {
     font-family: $secondary-font;
     font-size: 12px;
     line-height: 12px;
     text-transform: lowercase;
-    position: absolute;
-    top: 47px;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 6;
+    margin-top: -7px;
+    padding: 0 10px;
+    width: 90px;
+    background-color: $custom-background-color;
   }
 
   & dd {
@@ -33,18 +36,9 @@
     border: 1px solid #cdcdcd;
     border-radius: 3px;
     position: relative;
+    width: 100%;
   }
 
-  & dd::after {
-    content: "";
-    width: 87px;
-    height: 20px;
-    background-color: red; //inherit;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-  } //почему псевдоэлемент не перекрывает родителя через z-index
 }
 
 
@@ -60,10 +54,18 @@
   .resume__item dt {
     font-size: 14px;
     line-height: 14px;
+    background-color: $base-background-color;
+
   }
 
   .resume__item dd {
     font-size: 30px;
     line-height: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .resume__item dt {
+    background-color: $extra-background-color;
   }
 }
