@@ -27,17 +27,19 @@
   background-color: $base-background-color;
   background-image: url("../../icons/stack.svg#menu-close-mobile");
   background-repeat: no-repeat;
-  background-size: 24px 24px;
+  background-size: 18px 18px;
   width: 24px;
   height: 24px;
   border: none;
-  top: -45px;
-  right: 21px;
+  top: -43px;
+  right: 14px;
   display: none;
   cursor: pointer;
 }
 
 .main-nav--closed .main-nav__toggle {
   background-image: url("../../icons/stack.svg#menu-mobile");
-  background-size: 18px 18px;
+  background-size: 24px 24px;
+  right: 21px;
+  top: -45px;
 }
