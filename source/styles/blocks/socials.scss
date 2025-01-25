@@ -30,20 +30,20 @@
 .socials__link--vkontakte {
   &::before {
     mask-image: url("../../icons/stack.svg#icon-social-vkontakte");
-    mask-size: 27px 17px;
+    mask-size: 28px 21px;
   }
 }
 
 .socials__link--youtube {
   &::before {
     mask-image: url("../../icons/stack.svg#icon-social-youtube");
-    mask-size: 24px 19px;
+    mask-size: 28px 20px;
   }
 }
 
 .socials__link--telegram {
   &::before {
     mask-image: url("../../icons/stack.svg#icon-social-telegram");
-    mask-size: 20px 17px;
+    mask-size: 27px 21px;
   }
 }
