@@ -16,6 +16,8 @@
 
 .subscription__form {
   padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscription__input {
