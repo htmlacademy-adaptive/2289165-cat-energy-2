@@ -1,4 +1,5 @@
 .special-title {
+  margin: 0;
   position: relative;
   display: block;
   width: 100%;
@@ -12,7 +13,8 @@
   position: absolute;
   background-color: #68b738;
   left: 0;
-  top: 16px;
+  // top: 16px;
+  top: 11px;
 }
 
 .special-title__container {
@@ -28,8 +30,9 @@
   line-height: 26px;
   color: $extra-text-color;
   background-color: $base-background-color;
-  padding: 0 20px;
-  max-width: 227px;
+  // padding: 0 20px;
+  padding: 0 41px 0 20px;
+  // max-width: 227px;
 }
 
 @media (min-width: $tablet-width) {
