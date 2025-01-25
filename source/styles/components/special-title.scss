@@ -50,8 +50,13 @@
 
 @media (min-width: $desktop-width) {
   .special-title__container {
+    padding-left: 0;
     display: block;
     width: 1220px;
     margin: 0 auto;
+  }
+
+  .special-title__text {
+    margin-left: -40px;
   }
 }
