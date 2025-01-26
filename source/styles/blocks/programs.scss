@@ -17,7 +17,7 @@
   list-style: none;
   position: relative;
   min-height: 266px;
-  padding: 30px 20px 22px;
+  padding: 29px 19px 22px;
 }
 
 .programs__item::before {
@@ -28,7 +28,7 @@
   background-color: $base-decor-color-green;
   border-radius: 50%;
   left: 20px;
-  top: 24px;
+  top: 23px;
   display: block;
 }
 
@@ -39,7 +39,7 @@
   width: 36px;
   height: 50px;
   left: 27px;
-  top: 21px;
+  top: 20px;
 }
 
 .programs__item--weight-gain::after {
@@ -68,7 +68,8 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
+  width: 227px;
 }
 
 .programs__link {
@@ -78,6 +79,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  padding-left: 2px;
 }
 
 .programs__link::after {
@@ -89,8 +91,8 @@
   height: 12px;
   background-color: $extra-text-color;
   mask-position: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 6px;
+  right: -39px;
   position: absolute;
 }
 
