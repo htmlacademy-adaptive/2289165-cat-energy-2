@@ -43,6 +43,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .invitation {
+    width: 565px;
+    min-height: 199px;
+  }
+
   .invitation__text {
     text-align: left;
   }
