@@ -2,6 +2,7 @@
   background-color: $base-background-color;
   color: $base-text-color;
   padding: 21px 20px 24px;
+  position: relative;
 }
 
 .product-card__link {
@@ -11,6 +12,7 @@
 .product-card__title {
   margin: 0;
   margin-bottom: 15px;
+  margin-left: 140px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -19,11 +21,23 @@
   width: 80px;
 }
 
+.product-card__image-container {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+  width: 140px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .product-card__stats-list {
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 20px;
+  margin-left: 140px;
 }
 
 .product-card__stats-item {
@@ -32,56 +46,56 @@
   min-width: 140px;
 }
 
-
-@media (max-width: $mobile-width-only) {
-  .product-card {
-    position: relative;
-  }
-
-  .product-card__image-container {
-    position: absolute;
-    top: 21px;
-    left: 20px;
-    width: 140px;
-    height: 107px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .product-card__title {
-    margin-left: 140px;
-  }
-
-  .product-card__stats-list {
-    margin-left: 140px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .product-card {
     background-color: $extra-background-color;
     width: 324px;
     min-height: 430px;
-    padding: 0 37px 40px;
+    padding: 160px 37px 40px;
+  }
+
+  .product-card__image-container {
+    top: -71px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    height: 210px;
   }
 
   .product-card__title {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .product-card__stats-list {
     font-size: 16px;
     line-height: 20px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .product-card__stats-item {
+    min-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 4px;
+    padding-bottom: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-card {
     width: 245px;
-    padding: 0 38px 40px;
+    padding: 151px 38px 40px;
+  }
+
+  .product-card__stats-item {
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 }
+
 

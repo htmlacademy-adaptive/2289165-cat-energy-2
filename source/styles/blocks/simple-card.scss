@@ -19,10 +19,50 @@
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
-  // text-align: center;
+  // text-align: center;text-align
 
   & dd {
     text-align: right;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .simple-card {
+    padding: 26px 49px 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .simple-card__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .simple-card__price {
+    font-size: 16px;
+    line-height: 20px;
+    width: 230px;
+    margin: 0;
+    margin-bottom: 24px;
+    justify-content: flex-end;
+
+    & dd {
+      text-align: right;
+      width: 52px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .simple-card {
+    width: 896px;
+    padding-left: 0;
+  }
+
+  .simple-card__button {
+    width: 244px;
+    // margin-left: 40px;
+  }
+
+}

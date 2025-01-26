@@ -23,28 +23,35 @@
   .products {
     background-color: $base-background-color;
     color: $base-text-color;
-    padding: 65px 30px 74px;
+    padding: 53px 30px;
   }
 
   .products__title {
-    margin-bottom: 84px;
+    margin-bottom: 165px;
   }
 
   .products__list {
     display: grid;
-    gap: 60px;
+    gap: 139px 60px;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: none;
+  }
+
+  .products__item {
+    border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .products {
-    padding: 74px 110px 71px;
+    padding: 70px 110px 47px;
     width: 1440px;
     margin: 0 auto;
   }
 
+
   .products__list {
-    row-gap: 63px;
-    column-gap: 80px;
+    gap: 144px 80px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

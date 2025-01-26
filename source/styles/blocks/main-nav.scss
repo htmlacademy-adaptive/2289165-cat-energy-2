@@ -6,14 +6,6 @@
   display: none;
 }
 
-.main-nav__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 33px;
-    margin-left: auto;
-  }
-}
-
 .main-nav__list--opened {
   position: absolute;
   z-index: 1;
@@ -42,4 +34,14 @@
   background-size: 24px 24px;
   right: 21px;
   top: -45px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 33px;
+  }
 }
