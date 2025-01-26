@@ -28,3 +28,38 @@
   margin-bottom: 21px;
 }
 
+@media (min-width: $tablet-width) {
+  .show-more-card {
+    background-size: 60px 60px;
+    padding: 160px 37px 40px;
+    background-position: center 14%;
+    border: 2px solid $extra-background-color;
+  }
+
+  .show-more-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+
+  .show-more-card__text {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+    width: 170px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more-card {
+    padding-top: 149px;
+    background-position: center 13%;
+  }
+
+  .show-more-card__text {
+    margin-bottom: 92px;
+  }
+}

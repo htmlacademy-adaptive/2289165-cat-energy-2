@@ -39,3 +39,39 @@
   line-height: 26px;
   min-height: 56px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .subscription {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .subscription__title {
+    margin-bottom: 65px;
+  }
+
+  .subscription__text {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 38px 24px;
+    width: 632px;
+    margin: 0 auto;
+  }
+
+  .subscription__form {
+    padding: 0 68px 80px;
+    flex-direction: row;
+  }
+
+  .subscription__input {
+    min-width: 376px;
+    min-height: 56px;
+    margin-bottom: 0;
+    padding: 12px;
+  }
+
+  .subscription__button {
+    width: 256px;
+  }
+}

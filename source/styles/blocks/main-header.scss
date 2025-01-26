@@ -31,13 +31,16 @@
 
   .main-header__wrapper {
     padding-top: 17px;
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
     margin: 0 30px;
+    padding-left: 256px;
+
   }
 
   .main-header__logo-link {
     top: 25px;
+    left: 0;
   }
 }
 
@@ -50,6 +53,7 @@
   .main-header__wrapper {
     padding-top: 49px;
     margin: 0 110px;
+    padding-left: 743px;
   }
 
   .main-header__logo-link {

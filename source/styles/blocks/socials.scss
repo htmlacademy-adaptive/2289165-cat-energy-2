@@ -47,3 +47,9 @@
     mask-size: 27px 21px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .socials {
+    width: 92px;
+  }
+}
