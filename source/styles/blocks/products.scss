@@ -23,16 +23,16 @@
   .products {
     background-color: $base-background-color;
     color: $base-text-color;
-    padding: 53px 30px;
+    padding: 53px 30px 51px;
   }
 
   .products__title {
-    margin-bottom: 165px;
+    margin-bottom: 84px;
   }
 
   .products__list {
     display: grid;
-    gap: 139px 60px;
+    gap: 60px;
     grid-template-columns: 1fr 1fr;
     border-bottom: none;
   }
@@ -51,7 +51,7 @@
 
 
   .products__list {
-    gap: 144px 80px;
+    gap: 63px 80px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
