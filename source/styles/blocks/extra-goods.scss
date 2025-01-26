@@ -1,7 +1,7 @@
 .extra-goods {
   background-color: $base-background-color;
   color: $base-text-color;
-    padding-top: 24px;
+  padding-top: 24px;
 }
 
 .extra-goods__title {
@@ -44,12 +44,19 @@
 
 @media (min-width: $desktop-width) {
   .extra-goods {
+    margin-bottom: 30px;
+  }
+
+  .extra-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     width: 1220px;
   }
 
   .extra-goods__list {
     padding: 0;
+    width: 896px;
   }
 }
 
