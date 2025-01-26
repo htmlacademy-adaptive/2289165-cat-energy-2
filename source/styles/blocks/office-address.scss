@@ -19,19 +19,16 @@
 @media (min-width: $desktop-width) {
   .office-address {
     position: relative;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .office-address__wrapper {
     position: absolute;
     padding: 60px 80px;
-    top: 95px;
+    top: 94px;
     left: 110px;
     z-index: 5;
   }
-
-  // .office-address__map {
-  //   width: 1440px;
-  //   margin: 0 auto;
-  // }
 }
 
