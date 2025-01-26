@@ -17,8 +17,6 @@
   line-height: inherit;
 }
 
-// .show-more-card__count {}
-
 .show-more-card__text {
   margin: 0;
   font-family: $secondary-font;
@@ -34,6 +32,7 @@
     padding: 160px 37px 40px;
     background-position: center 14%;
     border: 2px solid $extra-background-color;
+    margin-top: 80px;
   }
 
   .show-more-card__title {
