@@ -78,8 +78,6 @@
   .algorithm {
     padding: 45px 30px 46px;
     border-bottom: 1px solid #e6e6e6;
-    margin: 0 auto;
-    width: 768px;
   }
 
   .algorithm__title {
@@ -95,6 +93,7 @@
     line-height: 24px;
     max-width: 708px;
     gap: 77px 134px;
+    margin: 0 auto;
   }
 
   .algorithm__item {
@@ -137,5 +136,12 @@
   .algorithm {
     padding: 71px 110px 69px;
     border-color: transparent;
+  }
+
+  .algorithm__list {
+
+    max-width: 1220px;
+    gap: 80px;
+    flex-wrap: nowrap;
   }
 }
