@@ -77,11 +77,12 @@
 @media (min-width: $tablet-width) {
   .hero__wrapper {
     position: relative;
-    margin: 0 20px;
-    padding-top: 65px;
-    padding-left: 120px;
+    margin: 0 auto;
+    width: 708px;
+    padding-top: 52px;
+    padding-left: 90px;
     padding-bottom: 526px;
-    min-height: 875px;
+    min-height: 863px;
   }
 
   .hero__wrapper::after {
@@ -92,14 +93,15 @@
     height: 609px;
     background-repeat: no-repeat;
     display: block;
-    bottom: -5px;
-    left: 30px;
+    bottom: 1px;
+    left: 0;
   }
 
   .hero__container {
     background-color: inherit;
     background-image: none;
     padding: 0;
+    min-height: 230px;
   }
 
   .hero__container::before {
@@ -139,6 +141,8 @@
     margin: 0;
     z-index: 2;
     width: 242px;
+    min-height: 54px;
+    padding: 14px 10px;
   }
 }
 

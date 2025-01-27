@@ -104,6 +104,8 @@
 
   .programs__list {
     gap: 30px;
+    margin: 0 auto;
+    max-width: 1060px;
   }
 
   .programs__item {
@@ -111,30 +113,31 @@
     list-style: none;
     position: relative;
     min-height: 266px;
-    padding: 77px 52px 57px;
+    padding: 76px 52px 57px;
+    max-width: 1000px;
   }
 
   .programs__item::before {
     width: 200px;
     height: 200px;
-    left: 65%;
-    top: 92px;
+    top: 90px;
+    left: 445px;
   }
 
   .programs__item--weight-loss::after {
 
     width: 140;
     height: 194px;
-    left: 70%;
-    top: 81px;
+    left: 475px;
+    top: 80px;
   }
 
   .programs__item--weight-gain::after {
 
     width: 268;
     height: 112px;
-    left: 60%;
-    top: 135px;
+    left: 411px;
+    top: 134px;
   }
 
   .programs__subtitle {
@@ -150,13 +153,18 @@
     color: $extra-text-color;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
-    max-width: 340px;
+    margin-bottom: 53px;
+    min-width: 340px;
   }
 
   .programs__link {
     font-size: 20px;
     line-height: 29.6px;
+  }
+
+  .programs__link::after {
+    top: 9px;
+    right: -48px;
   }
 }
 
