@@ -20,6 +20,31 @@
   left: 50%;
   padding: 0;
   z-index: 3;
+
+  &:hover,
+  &:hover::after,
+  &:focus,
+  &:focus::after {
+    background-color: $base-decor-color-green;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $base-decor-color-green;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: #5eaa2f;
+  }
+
+  &:active::before {
+    border-color: #5eaa2f;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
 }
 
 .slider__button::before {

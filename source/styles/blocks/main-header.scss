@@ -60,6 +60,19 @@
 
   .main-header__logo-link {
     top: 55px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
   }
 }
 
