@@ -31,7 +31,11 @@
   }
 
   .menu-list__item {
-    border: none;
+    border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+    }
   }
 }
 
