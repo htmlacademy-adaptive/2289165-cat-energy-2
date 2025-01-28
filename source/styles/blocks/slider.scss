@@ -85,13 +85,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .slider {
-    position: absolute;
-    top: 0;
-    right: 110px;
+  .slider__wrapper-before {
+    background-image: none;
+    background-color: $extra-background-color;
   }
 
-  .slider__wrapper-before {
-    background-image: linear-gradient(to bottom, $base-background-color 137px, $extra-background-color 137px);
+  .slider__wrapper-before::after {
+    content: "";
+    width: 560px;
+    height: 132px;
+    background-color: $base-background-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }

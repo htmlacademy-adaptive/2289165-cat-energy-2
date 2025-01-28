@@ -81,34 +81,59 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to bottom, $base-background-color 137px, $extra-background-color 137px);
-    padding: 0 110px 75px;
+    background-color: $extra-background-color;
+    background-image: none;
+    max-width: unset;
+
+    padding: 0 0 75px;
     min-height: 598px;
     position: relative;
   }
 
   .example__title {
-    margin-bottom: 146px;
+    margin-bottom: 72px;
+    padding-bottom: 74px;
+    background-color: $base-background-color;
+  }
+
+  .example__title-container {
+    display: block;
+    width: 1220px;
+    margin: 0 auto;
+    padding-right: 495px;
+  }
+
+  .example__wrapper {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .example__text {
-    width: 436px;
+    width: 433px;
+    margin-bottom: 68px;
   }
 
   .example__resume-wrapper {
-    margin-top: 69px;
     margin-bottom: 0;
     flex-direction: column;
-    gap: 60px;
+    gap: 53px;
   }
 
   .example__food-costs {
     margin: 0;
+    width: 350px;
   }
 
   .example__food-costs-number {
     position: absolute;
     top: 0;
     left: 237px;
+  }
+
+  .example__slider {
+    position: absolute;
+    top: -206px;
+    right: 0;
   }
 }
