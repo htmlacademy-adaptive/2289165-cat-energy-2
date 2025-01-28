@@ -1,1 +1,29 @@
 // to-do
+@media (min-width: $desktop-width) {
+  .page__body--index {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 600px;
+      z-index: -2;
+      background-color: #4f4e52;;
+      top: 0;
+      left: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 600px;
+      z-index: -1;
+      background-color: $base-decor-color-green;
+      top: 0;
+      opacity: 0.85;
+      left: 50%;
+    }
+  }
+}
