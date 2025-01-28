@@ -37,6 +37,31 @@
       border-top: none;
     }
   }
+
+  .menu-list__link {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+
+    &:active {
+      text-decoration: underline;
+      text-decoration-color: $base-decor-color-green;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 8px;
+    }
+  }
+
+  .menu-list__item--current .menu-list__link {
+    text-decoration: underline;
+    text-decoration-color: $base-decor-color-green;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,6 +73,14 @@
 
   .menu-list--index .menu-list__link {
     color: $base-decor-color-white;
+
+    &:active {
+      text-decoration-color: $base-decor-color-white;
+    }
+  }
+
+  .menu-list--index .menu-list__item--current .menu-list__link {
+    text-decoration-color: $base-decor-color-white;
   }
 }
 

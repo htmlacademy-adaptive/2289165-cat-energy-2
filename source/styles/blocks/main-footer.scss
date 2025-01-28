@@ -21,6 +21,19 @@
   display: block;
   margin: 0 auto;
   width: 128px;
+
+  &:hover,
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 // .main-footer__logo-text {}

@@ -16,9 +16,40 @@
 .button--primary {
   background-color: $base-decor-color-green;
   color: $base-decor-color-white;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ffffff4d;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+
 }
 
 .button--secondary {
   background-color: $extra-background-color;
   color: $base-text-color;
+
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    // color: #ffffff4d;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
