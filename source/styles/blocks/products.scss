@@ -35,6 +35,8 @@
     gap: 60px;
     grid-template-columns: 1fr 1fr;
     border-bottom: none;
+    margin: 0 auto;
+    max-width: 1000px;
   }
 
   .products__item {
@@ -53,5 +55,6 @@
   .products__list {
     gap: 63px 80px;
     grid-template-columns: repeat(4, 1fr);
+    max-width: unset;
   }
 }
