@@ -110,7 +110,7 @@
 @media (min-width: $desktop-width) {
   .example {
     background-color: $extra-background-color;
-    background-image: none;
+    // background-image: none;
     max-width: unset;
 
     padding: 0 0 75px;

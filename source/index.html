@@ -20,8 +20,8 @@
 
       <a class="main-header__logo-link" href="index.html" aria-current="page">
         <picture>
-          <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
-          <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg" width="202" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="174" height="50">
           <img class="main-header__logo" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип продукции Cat Energy.">
         </picture>
       </a>
@@ -126,13 +126,19 @@
             </button>
             <div class="slider__wrapper-before">
               <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-cat1@1x.png 1x, images/slider/slider-before-cat1@2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/slider-before-cat1@1x.webp 1x, images/slider/slider-before-cat1@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/slider/slider-before-cat1-mobile@1x.webp 1x, images/slider/slider-before-cat1-mobile@2x.webp 2x" width="280" height="256">
+
+                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-cat1@1x.png 1x, images/slider/slider-before-cat1@2x.png 2x" width="560" height="512">
                 <img class="slider__image slider__image--before" src="images/slider/slider-before-cat1-mobile@1x.png" srcset="images/slider/slider-before-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до корма Cat Energy Slim - тучный.">
               </picture>
             </div>
             <div class="slider__wrapper-after">
               <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-cat1@1x.png 1x, images/slider/slider-after-cat1@2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/slider-after-cat1@1x.webp 1x, images/slider/slider-after-cat1@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/slider/slider-after-cat1-mobile@1x.webp 1x, images/slider/slider-after-cat1-mobile@2x.webp 2x" width="280" height="256">
+
+                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-cat1@1x.png 1x, images/slider/slider-after-cat1@2x.png 2x" width="560" height="512">
                 <img class="slider__image slider__image--after" src="images/slider/slider-after-cat1-mobile@1x.png" srcset="images/slider/slider-after-cat1-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после корма Cat Energy Slim - здоровый.">
               </picture>
             </div>
@@ -158,8 +164,12 @@
       <div class="office-address__map map">
         <div class="map__image">
           <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
+
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
             <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Координаты офиса компании Cat Energy.">
           </picture>
         </div>
