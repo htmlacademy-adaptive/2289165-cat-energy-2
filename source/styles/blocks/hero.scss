@@ -11,7 +11,13 @@
 
 .hero__container {
   position: relative;
-  background-image: url("../../images/hero/hero-background-cat-mobile@2x.jpg");
+  background-image:
+    image-set(
+      url("../../images/hero/hero-background-cat-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/hero/hero-background-cat-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/hero/hero-background-cat-mobile@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/hero/hero-background-cat-mobile@2x.jpg") 2x type("image/jpeg")
+    );
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
@@ -34,7 +40,13 @@
 .hero__container::after {
   content: "";
   position: absolute;
-  background-image: url("../../images/hero/hero-can-mobile@1x.png");
+  background-image:
+    image-set(
+      url("../../images/hero/hero-can-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/hero/hero-can-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/hero/hero-can-mobile@1x.png") 1x type("image/png"),
+      url("../../images/hero/hero-can-mobile@2x.png") 2x type("image/png")
+    );
   background-size: 280px 270px;
   background-repeat: no-repeat;
   width: 280px;
@@ -88,7 +100,13 @@
   .hero__wrapper::after {
     content: "";
     position: absolute;
-    background-image: url("../../images/hero/hero-can-tablet@1x.png");
+    background-image:
+      image-set(
+        url("../../images/hero/hero-can-tablet@1x.webp") 1x type("image/webp"),
+        url("../../images/hero/hero-can-tablet@2x.webp") 2x type("image/webp"),
+        url("../../images/hero/hero-can-tablet@1x.png") 1x type("image/png"),
+        url("../../images/hero/hero-can-tablet@2x.png") 2x type("image/png")
+      );
     width: 709px;
     height: 609px;
     background-repeat: no-repeat;
@@ -157,7 +175,13 @@
   .hero::before {
     content: "";
     background-color: #3d3c41;
-    background-image: url("../../images/hero/hero-background-cat-desktop@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/hero/hero-background-cat-desktop@1x.jpg") 1x type("image/webp"),
+        url("../../images/hero/hero-background-cat-desktop@2x.jpg") 2x type("image/webp"),
+        url("../../images/hero/hero-background-cat-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../images/hero/hero-background-cat-desktop@2x.jpg") 2x type("image/jpg")
+      );
     background-position: left top;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -195,7 +219,13 @@
   .hero__container::after {
     content: "";
     position: absolute;
-    background-image: url("../../images/hero/hero-can-desktop@1x.png");
+    background-image:
+      image-set(
+        url("../../images/hero/hero-can-desktop@1x.webp") 1x type("image/webp"),
+        url("../../images/hero/hero-can-desktop@2x.webp") 2x type("image/webp"),
+        url("../../images/hero/hero-can-desktop@1x.png") 1x type("image/png"),
+        url("../../images/hero/hero-can-desktop@2x.png") 2x type("image/png")
+      );
     background-size: contain;
     width: 552px;
     height: 499px;
