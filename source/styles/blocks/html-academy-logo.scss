@@ -31,6 +31,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .html-academy-logo__text {
