@@ -92,13 +92,11 @@
 @media (min-width: $desktop-width) {
   .product-card {
     width: 245px;
-    padding: 232px 38px 40px;
+    padding: 234px 38px 40px;
   }
 
   .product-card__stats-item {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 7px;
   }
 }
-
-

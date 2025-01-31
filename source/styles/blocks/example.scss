@@ -34,7 +34,6 @@
   color: $extra-text-color;
   text-transform: uppercase;
   margin: 0;
-  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,12 +74,14 @@
   .example__food-costs {
     margin-top: 11px;
     font-size: 20px;
+
+    max-width: 200px;
+    text-align: right;
   }
 
   .example__food-costs-number {
-    position: absolute;
-    top: 29px;
-    right: 0;
+    display: block;
+    margin-top: 8px;
   }
 
   .example__slider-wrapper {
@@ -153,13 +154,15 @@
 
   .example__food-costs {
     margin: 0;
-    width: 350px;
+    text-align: unset;
+    max-width: 400px;
   }
 
   .example__food-costs-number {
-    position: absolute;
-    top: 0;
-    left: 237px;
+    width: 165px;
+    margin-top: 0;
+    padding-left: 62px;
+    float: right;
   }
 
   .example__slider-wrapper {
