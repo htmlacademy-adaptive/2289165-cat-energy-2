@@ -21,9 +21,21 @@ const beforeAfterSlider = (cursorPosition) => {
   changeBtn.style.left = `${shift}px`;
 };
 
+// const pauseEvents = (evt) => {
+//   evt.stopPropagation();
+//   evt.preventDefault();
+//   return false;
+// };
+
 const pauseEvents = (evt) => {
-  evt.stopPropagation();
-  evt.preventDefault();
+  if(evt.stopPropagation) {
+    evt.stopPropagation();
+  }
+  if(evt.preventDefault) {
+    evt.preventDefault();
+  }
+  evt.cancelBubble = true;
+  evt.returnValue = false;
   return false;
 };
 
@@ -51,23 +63,23 @@ body.addEventListener('mousemove', (evt) => {
   pauseEvents(evt);
 });
 
-body.addEventListener('touchstart', (evt) => {
+slider.addEventListener('touchstart', (evt) => {
   evt.preventDefault();
   isActive = true;
 });
 
-body.addEventListener('touchend', (evt) => {
+slider.addEventListener('touchend', (evt) => {
   evt.preventDefault();
   isActive = false;
 });
 
-body.addEventListener('touchcancel', (evt) => {
+slider.addEventListener('touchcancel', (evt) => {
   evt.preventDefault();
   isActive = false;
 });
 
 
-body.addEventListener('touchmove', (evt) => {
+slider.addEventListener('touchmove', (evt) => {
   evt.preventDefault();
   if (!isActive) {
     return;
