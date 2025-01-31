@@ -34,10 +34,11 @@
 
 @media (min-width: $desktop-width) {
   .control-group {
-    padding: 0 110px;
+    padding: 0;
     grid-template-columns: 570px 180px;
     gap: 76px;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    width: 1220px;
   }
 
   .control-group__text {

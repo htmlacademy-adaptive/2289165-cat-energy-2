@@ -31,9 +31,11 @@
   }
 
   .owner-group__list {
-    padding: 74px 110px 0;
+    padding: 74px 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }

@@ -12,7 +12,11 @@
   }
 
   .comment-group__input {
-    margin: 86px 10px 0 70px;
+    // margin: 86px 10px 0 70px;
+  }
+
+  .comment-group__wrapper {
+    margin: 48px 50px 0;
   }
 }
 
@@ -22,6 +26,12 @@
   }
 
   .comment-group__input {
-    margin: 76px 10px 0 110px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .comment-group__wrapper {
+    width: 1220px;
+    margin: 76px auto 0;
   }
 }

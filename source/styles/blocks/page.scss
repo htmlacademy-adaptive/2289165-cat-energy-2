@@ -1,4 +1,16 @@
 // to-do
+.page__body {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-text-color;
+  background-color: $base-background-color;
+  margin: 0;
+  min-width: 320px;
+}
+
+
 @media (min-width: $desktop-width) {
   .page__body--index {
     position: relative;
