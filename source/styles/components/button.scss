@@ -30,8 +30,6 @@
   &:disabled {
     opacity: 0.3;
   }
-
-
 }
 
 .button--secondary {
@@ -52,4 +50,13 @@
   &:disabled {
     opacity: 0.3;
   }
+}
+
+
+.button--larger-text {
+  // width: unset;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 14px;
+  min-height: 54px;
 }

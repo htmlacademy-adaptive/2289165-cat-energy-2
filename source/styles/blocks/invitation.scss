@@ -1,8 +1,12 @@
 .invitation {
-  background-color: $base-background-color;
+  background-color: $extra-background-color;
   color: $base-text-color;
   display: flex;
   justify-content: space-between;
+}
+
+.invitation--light {
+  background-color: $base-background-color;
 }
 
 .invitation__title {
@@ -47,6 +51,7 @@
   .invitation {
     width: 565px;
     min-height: 199px;
+    background-color: $base-background-color;
   }
 
   .invitation__text {

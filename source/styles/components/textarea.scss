@@ -12,3 +12,13 @@
   padding: 12px 10px 10px 15px;
   min-width: 200px;
 }
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 628px;
+    min-height: 175px;
+    padding: 10px 10px 10px 20px;
+  }
+}

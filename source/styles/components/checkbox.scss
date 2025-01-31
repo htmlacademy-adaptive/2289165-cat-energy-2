@@ -38,3 +38,27 @@
 .checkbox__input:checked + .checkbox__label::after {//to-do
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 40px;
+
+    padding-top: 6px;
+    padding-left: 45px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -15px;
+    }
+
+    &::after {
+      width: 24px;
+      height: 19px;
+      top: 12px;
+      left: -7px;
+    }
+  }
+}
