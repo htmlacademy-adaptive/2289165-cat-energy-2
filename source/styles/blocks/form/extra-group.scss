@@ -29,8 +29,10 @@
   }
 
   .extra-group__list {
-    padding: 55px 85px 0 125px;
+    padding: 55px 85px 0 15px;
     grid-template-columns: repeat(4, 1fr);
     gap: 70px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
