@@ -5,3 +5,23 @@
 .comment-group__input {
   margin: 38px 20px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .comment-group {
+    margin-bottom: 62px;
+  }
+
+  .comment-group__input {
+    margin: 86px 10px 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment-group {
+    margin-bottom: 68px;
+  }
+
+  .comment-group__input {
+    margin: 76px 10px 0 110px;
+  }
+}

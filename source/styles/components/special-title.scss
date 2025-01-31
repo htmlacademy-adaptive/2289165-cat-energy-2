@@ -45,7 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .special-title__container {
-    padding-left: 30px;
+    padding-left: 29px;
   }
 
   .special-title__text {
@@ -58,6 +58,12 @@
   .special-title--similar .special-title__text {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px;
+
+  }
+
+  .special-title--similar::before {
+    top: 21px;
   }
 }
 

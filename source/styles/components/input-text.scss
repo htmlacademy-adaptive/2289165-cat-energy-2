@@ -31,3 +31,27 @@
   right: 13px;
   top: 16px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .input-text__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 11px;
+  }
+
+
+  .input-text__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+
+  .input-text__icon {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+  }
+
+}
