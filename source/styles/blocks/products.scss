@@ -23,7 +23,7 @@
   .products {
     background-color: $base-background-color;
     color: $base-text-color;
-    padding: 53px 30px 51px;
+    padding: 57px 30px 48px;
   }
 
   .products__title {
@@ -46,11 +46,14 @@
 
 @media (min-width: $desktop-width) {
   .products {
-    padding: 70px 110px 47px;
+    padding: 63px 110px 44px;
     width: 1440px;
     margin: 0 auto;
   }
 
+  .products__title {
+    margin-bottom: 86px;
+  }
 
   .products__list {
     gap: 63px 80px;

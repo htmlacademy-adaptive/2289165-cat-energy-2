@@ -7,7 +7,7 @@
   background-position: center top;
   color: $base-decor-color-white;
   min-height: 290px;
-  padding: 187px 58px 5px;
+  padding: 187px 50px 5px;
   margin-left: auto;
   margin-right: auto;
   width: calc(100vw - 40px);
@@ -53,6 +53,7 @@
     min-height: 200px;
     padding: 71px 104px 5px 420px;
     width: calc(100vw - 140px);
+    min-width: 707px;
   }
 
   .promo::after {
@@ -70,7 +71,7 @@
     width: 80px;
     height: 82px;
     top: -15px;
-    left: -166%;
+    left: -169%;
   }
 }
 
@@ -82,6 +83,7 @@
     height: 288px;
     padding: 185px 42px 5px;
     margin: 0;
+    min-width: 245px;
   }
 
   .promo::after {

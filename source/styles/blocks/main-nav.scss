@@ -42,6 +42,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 33px;
+    gap: 34px;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .main-nav__list {
+//     gap: 33px;
+//   }
+// }

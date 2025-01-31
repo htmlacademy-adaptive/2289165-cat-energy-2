@@ -40,13 +40,17 @@
 .html-academy-logo__text {
   font-family: $secondary-font;
   position: relative;
-  width: 113px;
+  width: 125px;
   margin: 0;
-  padding: 7px 0;
+  padding: 5px 0;
 }
 
 @media (min-width: $tablet-width) {
   .html-academy-logo {
     width: 168px;
+  }
+
+  .html-academy-logo__text {
+    padding: 2px 5px;
   }
 }

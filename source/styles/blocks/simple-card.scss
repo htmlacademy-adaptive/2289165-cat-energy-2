@@ -47,12 +47,18 @@
     line-height: 20px;
     width: 230px;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
     justify-content: flex-end;
+    padding-top: 3px;
 
     & dd {
       text-align: right;
       width: 52px;
+      padding-right: 2px;
+    }
+
+    & dt {
+      padding-right: 1px;
     }
   }
 }
