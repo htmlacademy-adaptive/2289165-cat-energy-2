@@ -81,6 +81,7 @@
   width: 280px; //? почему при 100% кот обрезается по-центру
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .slider__wrapper-before {
@@ -92,6 +93,11 @@
   height: 100%;
   overflow: hidden;
   background-color: $custom-background-color;
+  pointer-events: none;
+}
+
+.slider__wrapper-after {
+  pointer-events: none;
 }
 
 @media (min-width: $tablet-width) {
