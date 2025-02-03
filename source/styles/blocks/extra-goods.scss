@@ -43,6 +43,16 @@
 
   .extra-goods__list {
     margin-bottom: 69px;
+    padding: 0 30px;
+  }
+
+  .extra-goods__item {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+  }
+
+  .extra-goods__item:last-child {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 

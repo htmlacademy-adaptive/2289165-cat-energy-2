@@ -53,7 +53,7 @@
 @media (min-width: $tablet-width) {
   .product-card {
     background-image: linear-gradient(to bottom, $base-background-color 81px, $extra-background-color 81px);
-    min-height: 511px;
+    // min-height: 511px;
     padding: 241px 37px 40px;
   }
 
@@ -84,15 +84,19 @@
   .product-card__stats-item {
     min-height: 20px;
     border-bottom: 1px solid #cdcdcd;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-card {
     width: 245px;
-    padding: 234px 38px 40px;
+    padding: 230px 38px 40px;
+  }
+
+  .product-card__stats-list {
+    margin-bottom: 35px;
   }
 
   .product-card__stats-item {
