@@ -70,6 +70,17 @@
   margin: 0;
   margin-bottom: 40px;
   width: 227px;
+  position: relative;
+}
+
+.programs__text::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 241px;
+  background-color: #d9d9d9;
+  left: 0;
+  bottom: -23px;
 }
 
 .programs__link {
@@ -165,6 +176,11 @@
     line-height: 24px;
     margin-bottom: 53px;
     min-width: 340px;
+  }
+
+  .programs__text::after {
+    // background-color: transparent;
+    display: none;
   }
 
   .programs__link {
