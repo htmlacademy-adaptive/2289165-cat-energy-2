@@ -39,6 +39,21 @@
   display: block;
 }
 
+
+.checkbox__label::before:hover,
+.checkbox__label::before:focus {
+  border: 1px solid #bababa;
+}
+
+.checkbox__label:active {
+  opacity: 0.6;
+}
+
+
+.checkbox__label:disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .checkbox__label {
     font-size: 20px;
