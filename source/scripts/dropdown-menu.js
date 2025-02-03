@@ -48,3 +48,7 @@ if (document.body.clientWidth < 768) {
 
 window.addEventListener('resize', () => onresize());
 menuBtn.addEventListener('click', () => toggleMenu());
+menuBtn.addEventListener('touchstart', (evt) => {
+  evt.preventDefault();
+  toggleMenu();
+});
