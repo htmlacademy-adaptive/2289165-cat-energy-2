@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   gap: 13px;
-  // flex-wrap: wrap; //нужно ли? при 320px съезжает
 }
 
 .input-text__label {
@@ -32,6 +31,28 @@
   top: 16px;
 }
 
+.input-text__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.input-text__input:focus,
+.input-text__input:active {
+  border: 2px solid #444444;
+}
+
+.input-text__input:focus + .input-text__icon,
+.input-text__input:active + .input-text__icon {
+  color: $base-decor-color-green;
+}
+
+.input-text__input:invalid {
+  border: 2px solid #ff8282;
+}
+
+.input-text__input:invalid + .input-text__icon {
+  color: #ff8282;
+}
+
 
 @media (min-width: $tablet-width) {
   .input-text__label {
@@ -54,5 +75,4 @@
     right: 15px;
     top: 19px;
   }
-
 }

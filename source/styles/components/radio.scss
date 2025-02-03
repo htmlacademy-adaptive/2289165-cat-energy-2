@@ -44,6 +44,19 @@
   display: block;
 }
 
+.radio__label::before:hover,
+.radio__label::before:focus {
+  border: 1px solid #bababa;
+}
+
+.radio__label:active {
+  opacity: 0.6;
+}
+
+
+.radio__label:disabled {
+  opacity: 0.3;
+}
 
 @media (min-width: $tablet-width) {
   .radio__label {
