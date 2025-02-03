@@ -10,6 +10,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/dropdown-menu.js" defer></script>
   <script src="scripts/slider.js" defer></script>
 </head>
@@ -172,7 +174,7 @@
 
             <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
             <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
-            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Координаты офиса компании Cat Energy.">
+            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Координаты офиса компании Cat Energy." loading="lazy">
           </picture>
         </div>
         <div class="map__google">
