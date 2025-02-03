@@ -59,7 +59,10 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
+  }
 
+  .special-title::before {
+    top: 14px;
   }
 
   .special-title--similar::before {
@@ -84,5 +87,9 @@
   .special-title--similar .special-title__text {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .special-title::before {
+    top: 18px;
   }
 }
