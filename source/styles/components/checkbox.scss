@@ -30,27 +30,27 @@
     // fill: #68b738; //to-do
     top: 8px;
     left: 6px;
-    // display: none;
+    display: none;
     background-image: url("../../icons/stack.svg#icon-tick");
   }
 }
 
-.checkbox__input:checked + .checkbox__label::after {//to-do
+.checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
 
 
-.checkbox__label::before:hover,
-.checkbox__label::before:focus {
+.checkbox__input:hover + .checkbox__label::before,
+.checkbox__input:focus + .checkbox__label::before {
   border: 1px solid #bababa;
 }
 
-.checkbox__label:active {
+.checkbox__input:active + .checkbox__label {
   opacity: 0.6;
 }
 
 
-.checkbox__label:disabled {
+.checkbox__input:disabled + .checkbox__label {
   opacity: 0.3;
 }
 
