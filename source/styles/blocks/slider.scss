@@ -1,11 +1,7 @@
 .slider {
   width: 280px;
   height: 256px;
-
-  // width: 560px;
-  // height: 512px;
   position: relative;
-  // outline: 2px solid blueviolet;
   justify-self: center;
   touch-action: none;
 }
@@ -77,9 +73,8 @@
   background-color: #666666;
 }
 
-
 .slider__image {
-  width: 280px; //? почему при 100% кот обрезается по-центру
+  width: 280px;
   height: 100%;
   object-fit: cover;
   pointer-events: none;
@@ -100,6 +95,7 @@
 .slider__wrapper-after {
   pointer-events: none;
 }
+
 
 @media (min-width: $tablet-width) {
   .slider {
@@ -127,6 +123,7 @@
     z-index: -1;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .slider__wrapper-before {

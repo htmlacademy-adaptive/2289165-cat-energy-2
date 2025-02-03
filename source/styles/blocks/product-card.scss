@@ -50,10 +50,10 @@
   content: "\00A0₽";
 }
 
+
 @media (min-width: $tablet-width) {
   .product-card {
     background-image: linear-gradient(to bottom, $base-background-color 81px, $extra-background-color 81px);
-    // min-height: 511px;
     padding: 241px 37px 40px;
   }
 
@@ -88,6 +88,7 @@
     padding-bottom: 7px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .product-card {

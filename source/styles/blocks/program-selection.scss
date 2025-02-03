@@ -12,11 +12,10 @@
   margin-bottom: 39px;
 }
 
+
 @media (min-width: $tablet-width) {
   .program-selection {
     padding-top: 58px;
-    // width: 708px;
-    // margin: 0 auto;
   }
 
   .program-selection__title {
@@ -27,11 +26,8 @@
   .program-selection__text {
     margin-bottom: 66px;
   }
-
-  .program-selection__form {
-    // padding-left: 40px;
-  }
 }
+
 
 @media (min-width: $desktop-width) {
   .program-selection {
