@@ -1,0 +1,107 @@
+.product-card {
+  background-color: $base-background-color;
+  color: $base-text-color;
+  padding: 21px 20px 24px;
+  position: relative;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $product-card-title-text-color;
+  text-transform: uppercase;
+  width: 80px;
+}
+
+.product-card__image-container {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+  width: 140px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__stats-list {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  margin-left: 140px;
+}
+
+.product-card__stats-item {
+  display: flex;
+  justify-content: space-between;
+  min-width: 140px;
+}
+
+.product-card__stats-item:last-child dd::after {
+  content: "\00A0₽";
+}
+
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    background-image: linear-gradient(to bottom, $base-background-color 81px, $extra-background-color 81px);
+    padding: 241px 37px 40px;
+  }
+
+  .product-card__image-container {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    height: 210px;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+
+  .product-card__stats-list {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0;
+    margin-bottom: 31px;
+  }
+
+  .product-card__stats-item {
+    min-height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 3px;
+    padding-bottom: 7px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+    padding: 230px 38px 40px;
+  }
+
+  .product-card__stats-list {
+    margin-bottom: 35px;
+  }
+
+  .product-card__stats-item {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+}

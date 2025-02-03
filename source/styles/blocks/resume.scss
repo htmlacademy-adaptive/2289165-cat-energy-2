@@ -1,0 +1,72 @@
+.resume {
+  background-color: inherit;
+  color: $base-text-color;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.resume__item {
+  text-align: center;
+  position: relative;
+  min-width: 124px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  & dt {
+    font-family: $secondary-font;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: lowercase;
+    z-index: 6;
+    margin-top: -7px;
+    padding: 0 10px;
+    width: 90px;
+    background-color: $custom-background-color;
+  }
+
+  & dd {
+    font-size: 24px;
+    line-height: 24px;
+    color: $extra-text-color;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 13px 5px 16px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .resume {
+    gap: 42px;
+  }
+
+  .resume__item {
+    width: 162px;
+  }
+
+  .resume__item dt {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $base-background-color;
+    width: auto;
+  }
+
+  .resume__item dd {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .resume__item dt {
+    background-color: $extra-background-color;
+  }
+}

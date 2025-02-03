@@ -1,0 +1,47 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav__list--opened {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  background-color: $base-background-color;
+  background-image: url("../../icons/stack.svg#menu-close-mobile");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  top: -43px;
+  right: 14px;
+  display: none;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#menu-mobile");
+  background-size: 24px 24px;
+  right: 21px;
+  top: -45px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 34px;
+  }
+}

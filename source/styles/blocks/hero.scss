@@ -1,0 +1,246 @@
+.hero {
+  background-color: $base-background-color;
+  color: $extra-text-color;
+}
+
+.hero__wrapper {
+  position: relative;
+  min-height: 440px;
+  margin-bottom: 20px;
+}
+
+.hero__container {
+  position: relative;
+  background-image:
+    image-set(
+      url("../../images/hero/hero-background-cat-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/hero/hero-background-cat-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/hero/hero-background-cat-mobile@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/hero/hero-background-cat-mobile@2x.jpg") 2x type("image/jpeg")
+    );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #4b4a4e;
+  padding-top: 27px;
+  padding-bottom: 135px;
+  min-height: 302px;
+}
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $base-decor-color-green;
+  opacity: 0.85;
+  top: 0;
+}
+
+.hero__container::after {
+  content: "";
+  position: absolute;
+  background-image:
+    image-set(
+      url("../../images/hero/hero-can-mobile@1x.webp") 1x type("image/webp"),
+      url("../../images/hero/hero-can-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/hero/hero-can-mobile@1x.png") 1x type("image/png"),
+      url("../../images/hero/hero-can-mobile@2x.png") 2x type("image/png")
+    );
+  background-size: 280px 270px;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 270px;
+  bottom: -134px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__title {
+  position: relative;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $base-decor-color-white;
+  margin: 0 auto 25px;
+  width: 250px;
+}
+
+.hero__slogan {
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $base-decor-color-white;
+  margin: 0 40px;
+}
+
+.hero__select-program {
+  color: $base-decor-color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 138px auto 0;
+  width: calc(100% - 40px);
+}
+
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 708px;
+    padding-top: 57px;
+    padding-left: 90px;
+    padding-bottom: 526px;
+    min-height: 863px;
+  }
+
+  .hero__wrapper::after {
+    content: "";
+    position: absolute;
+    background-image:
+      image-set(
+        url("../../images/hero/hero-can-tablet@1x.webp") 1x type("image/webp"),
+        url("../../images/hero/hero-can-tablet@2x.webp") 2x type("image/webp"),
+        url("../../images/hero/hero-can-tablet@1x.png") 1x type("image/png"),
+        url("../../images/hero/hero-can-tablet@2x.png") 2x type("image/png")
+      );
+    width: 709px;
+    height: 609px;
+    background-repeat: no-repeat;
+    display: block;
+    bottom: 1px;
+    left: 0;
+  }
+
+  .hero__container {
+    background-color: inherit;
+    background-image: none;
+    padding: 0;
+    min-height: 230px;
+  }
+
+  .hero__container::before {
+    background-color: inherit;
+  }
+
+  .hero__container::after {
+    background-image: none;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $extra-text-color;
+    width: 420px;
+    margin: 0;
+    margin-bottom: 40px;
+    z-index: 2;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $extra-text-color;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: left;
+    z-index: 2;
+    max-width: 720px;
+  }
+
+  .hero__select-program {
+    position: relative;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    z-index: 2;
+    width: 242px;
+    min-height: 54px;
+    padding: 14px 10px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+    z-index: -1;
+    margin: 0 auto 82px;
+  }
+
+  .hero::before {
+    content: "";
+    background-color: #3d3c41;
+    background-image:
+      image-set(
+        url("../../images/hero/hero-background-cat-desktop@1x.jpg") 1x type("image/webp"),
+        url("../../images/hero/hero-background-cat-desktop@2x.jpg") 2x type("image/webp"),
+        url("../../images/hero/hero-background-cat-desktop@1x.jpg") 1x type("image/jpg"),
+        url("../../images/hero/hero-background-cat-desktop@2x.jpg") 2x type("image/jpg")
+      );
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 50%;
+    height: calc(100% + 120px);
+    position: absolute;
+    top: -120px;
+    left: 50%;
+  }
+
+  .hero::after {
+    content: "";
+    opacity: 0.85;
+    background-color: $base-decor-color-green;
+    width: 50%;
+    height: calc(100% + 120px);
+    position: absolute;
+    top: -120px;
+    left: 50%;
+  }
+
+  .hero__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 102px;
+    padding-bottom: 183px;
+    padding-left: 80px;
+    min-height: auto;
+  }
+
+  .hero__wrapper::after {
+    background-image: none;
+  }
+
+  .hero__container::after {
+    content: "";
+    position: absolute;
+    background-image:
+      image-set(
+        url("../../images/hero/hero-can-desktop@1x.webp") 1x type("image/webp"),
+        url("../../images/hero/hero-can-desktop@2x.webp") 2x type("image/webp"),
+        url("../../images/hero/hero-can-desktop@1x.png") 1x type("image/png"),
+        url("../../images/hero/hero-can-desktop@2x.png") 2x type("image/png")
+      );
+    background-size: contain;
+    width: 552px;
+    height: 499px;
+    bottom: -188px;
+    left: 643px;
+    z-index: 2;
+  }
+
+  .hero__slogan {
+    max-width: 468px;
+  }
+
+  .hero__select-program {
+    padding: 15px 10px;
+    width: 246px;
+  }
+}

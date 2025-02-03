@@ -1,0 +1,177 @@
+.example {
+  background-color: $custom-background-color;
+  color: $base-text-color;
+  padding: 25px 20px 40px;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $extra-text-color;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.example__resume-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.example__food-costs {
+  font-size: 14px;
+  color: $extra-text-color;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $base-background-color;
+    padding: 0;
+    padding-top: 45px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .example__resume-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 55px auto 101px;
+    padding: 0 30px;
+  }
+
+  .example__food-costs {
+    margin-top: 11px;
+    font-size: 20px;
+
+    max-width: 200px;
+    text-align: right;
+  }
+
+  .example__food-costs-number {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .example__slider-wrapper {
+    background-color: $custom-background-color;
+    padding-bottom: 98px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 147px;
+      background-color: $base-background-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  .example__slider {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: $extra-background-color;
+    max-width: unset;
+
+    padding: 0 0 75px;
+    min-height: 598px;
+    position: relative;
+  }
+
+  .example__title {
+    margin-bottom: 72px;
+    padding-bottom: 74px;
+    background-color: $base-background-color;
+  }
+
+  .example__title-container {
+    display: block;
+    width: 1220px;
+    margin: 0 auto;
+    padding-right: 495px;
+  }
+
+  .example__wrapper {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .example__text {
+    width: 433px;
+    margin: 0;
+    margin-bottom: 68px;
+    padding: 0;
+  }
+
+  .example__resume-wrapper {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 53px;
+  }
+
+  .example__food-costs {
+    margin: 0;
+    text-align: unset;
+    max-width: 400px;
+  }
+
+  .example__food-costs-number {
+    width: 165px;
+    margin-top: 0;
+    padding-left: 66px;
+    float: right;
+  }
+
+  .example__slider-wrapper {
+    all: initial;
+
+    &::after {
+      all: initial;
+    }
+  }
+
+  .example__slider {
+    position: absolute;
+    top: -206px;
+    right: 0;
+  }
+}

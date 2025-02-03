@@ -1,0 +1,252 @@
+.programs {
+  background-color: $base-background-color;
+  color: $base-text-color;
+  padding: 0 20px;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programs__item {
+  background-color: $extra-background-color;
+  list-style: none;
+  position: relative;
+  min-height: 266px;
+  padding: 29px 19px 22px;
+}
+
+.programs__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: $base-decor-color-green;
+  border-radius: 50%;
+  left: 20px;
+  top: 23px;
+  display: block;
+}
+
+.programs__item--weight-loss::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  width: 36px;
+  height: 50px;
+  left: 27px;
+  top: 20px;
+}
+
+.programs__item--weight-gain::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 28px;
+  left: 12px;
+  top: 35px;
+}
+
+.programs__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $extra-text-color;
+  margin: 0;
+  margin-left: 71px;
+  margin-bottom: 29px;
+}
+
+.programs__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 40px;
+  width: 227px;
+  position: relative;
+}
+
+.programs__text::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 241px;
+  background-color: #d9d9d9;
+  left: 0;
+  bottom: -23px;
+}
+
+.programs__link {
+  position: relative;
+  line-height: 16px;
+  color: $extra-text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 2px;
+  display: inline-block;
+  padding-right: 57px;
+}
+
+.programs__link::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#arrow-right");
+  mask-repeat: no-repeat;
+  mask-size: 32px 12px;
+  width: 24px;
+  height: 12px;
+  background-color: $extra-text-color;
+  mask-position: right 100%;
+  top: 2px;
+  left: calc(100% - 37px);
+  position: absolute;
+}
+
+.programs__link:hover::after,
+.programs__link:focus::after {
+  width: 32px;
+}
+
+.programs__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .programs__list {
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1060px;
+  }
+
+  .programs__item {
+    background-color: $extra-background-color;
+    list-style: none;
+    position: relative;
+    min-height: 372px;
+    padding: 76px 52px 10px;
+    max-width: 1000px;
+  }
+
+  .programs__item::before {
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    left: calc(100% - 263px);
+  }
+
+  .programs__item--weight-loss::after {
+
+    width: 140;
+    height: 194px;
+    left: calc(100% - 233px);
+    top: 80px;
+  }
+
+  .programs__item--weight-gain::after {
+
+    width: 268;
+    height: 112px;
+    left: calc(100% - 297px);
+    top: 134px;
+  }
+
+  .programs__subtitle {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 340px;
+  }
+
+  .programs__text {
+    color: $extra-text-color;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+    min-width: 340px;
+  }
+
+  .programs__text::after {
+    display: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 66px;
+  }
+
+  .programs__link::after {
+    top: 9px;
+    right: -48px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .programs {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 1220px;
+  }
+
+  .programs__list {
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    max-width: unset;
+    width: 1220px;
+  }
+
+  .programs__item {
+    min-height: 374px;
+    padding: 77px 10px 10px 52px;
+    min-width: 570px;
+    max-width: unset;
+  }
+
+  .programs__item::before {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 47px;
+  }
+
+  .programs__item--weight-loss::after {
+    width: 70px;
+    height: 97px;
+    left: 65px;
+    top: 41px;
+  }
+
+  .programs__item--weight-gain::after {
+    width: 134px;
+    height: 56px;
+    top: 68px;
+    left: 31px;
+  }
+
+  .programs__subtitle {
+    max-width: unset;
+    padding-left: 160px;
+    margin-bottom: 74px;
+  }
+
+  .programs__text {
+    margin-bottom: 26px;
+    width: 460px;
+  }
+}

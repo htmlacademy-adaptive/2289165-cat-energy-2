@@ -1,0 +1,38 @@
+.extra-group {
+  margin-bottom: 35px;
+}
+
+.extra-group__list {
+  padding: 33px 20px 0;
+}
+
+.extra-group__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-group {
+    margin-bottom: 40px;
+  }
+
+  .extra-group__list {
+    padding: 56px 85px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-group {
+    margin-bottom: 48px;
+  }
+
+  .extra-group__list {
+    padding: 55px 85px 0 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

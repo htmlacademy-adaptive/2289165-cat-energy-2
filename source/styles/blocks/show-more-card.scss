@@ -1,0 +1,68 @@
+.show-more-card {
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 78px 20px 23px;
+  background-position: center 14%;
+}
+
+.show-more-card__title {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-weight: 400;
+  color: $custom-text-color;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.show-more-card__text {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more-card {
+    background-size: 60px 60px;
+    padding: 160px 37px 37px;
+    background-position: center 14%;
+    border: 2px solid $extra-background-color;
+    margin-top: 80px;
+  }
+
+  .show-more-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+
+  .show-more-card__text {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+    width: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more-card {
+    padding-top: 149px;
+    background-position: center 13%;
+  }
+
+  .show-more-card__title {
+    margin-bottom: 26px;
+  }
+
+  .show-more-card__text {
+    margin-bottom: 92px;
+  }
+}

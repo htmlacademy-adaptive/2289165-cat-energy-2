@@ -1,0 +1,42 @@
+.office-address__wrapper {
+  padding: 26px 20px;
+}
+
+.office-address__map {
+  height: 362px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .office-address__wrapper {
+    padding: 60px 70px;
+  }
+
+  .office-address__map {
+    height: 400px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .office-address {
+    position: relative;
+    padding: 95px 10px 106px;
+    padding-left: calc(50% - 610px);
+  }
+
+  .office-address__wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 59px 75px 60px 79px;
+  }
+
+  .office-address__map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

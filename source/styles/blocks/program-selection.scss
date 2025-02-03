@@ -1,0 +1,41 @@
+.program-selection {
+  background-color: $base-background-color;
+  color: $extra-text-color;
+  padding-top: 28px;
+}
+
+.program-selection__title {
+  margin-bottom: 37px;
+}
+
+.program-selection__text {
+  margin-bottom: 39px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding-top: 58px;
+  }
+
+  .program-selection__title {
+    margin-bottom: 54px;
+    padding-left: 70px;
+  }
+
+  .program-selection__text {
+    margin-bottom: 66px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    padding-top: 65px;
+  }
+
+  .program-selection__title {
+    padding-left: 110px;
+    margin-bottom: 54px;
+  }
+}

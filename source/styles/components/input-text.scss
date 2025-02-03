@@ -1,0 +1,78 @@
+.input-text {
+  display: flex;
+  position: relative;
+  gap: 13px;
+}
+
+.input-text__label {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 13px;
+}
+
+.input-text__input {
+  border: 1px solid #e7e7e7;
+  height: 45px;
+  flex-grow: 1;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+.input-text__icon {
+  position: absolute;
+  right: 13px;
+  top: 16px;
+}
+
+.input-text__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.input-text__input:focus,
+.input-text__input:active {
+  border: 2px solid #444444;
+}
+
+.input-text__input:focus + .input-text__icon,
+.input-text__input:active + .input-text__icon {
+  color: $base-decor-color-green;
+}
+
+.input-text__input:invalid {
+  border: 2px solid #ff8282;
+}
+
+.input-text__input:invalid + .input-text__icon {
+  color: #ff8282;
+}
+
+
+@media (min-width: $tablet-width) {
+  .input-text__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 11px;
+  }
+
+
+  .input-text__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 20px;
+    min-width: 260px;
+  }
+
+  .input-text__icon {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+  }
+}

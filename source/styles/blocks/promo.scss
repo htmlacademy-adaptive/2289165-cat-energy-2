@@ -1,0 +1,108 @@
+.promo {
+  position: relative;
+  background-color: $base-decor-color-green;
+  background-image: url("../../images/promo/promo-background-cat-mobile@2x.jpg");
+  background-size: 280px 290px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: $base-decor-color-white;
+  min-height: 290px;
+  padding: 187px 50px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100vw - 40px);
+}
+
+.promo::after {
+  content: "";
+  background-color: $base-decor-color-green;
+  width: 100%;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+
+.promo__text {
+  margin: 0 auto;
+  font-family: $secondary-font;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 180px;
+}
+
+.promo__text::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#gift");
+  width: 78px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -128px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../../images/promo/promo-background-cat-tablet@2x.jpg");
+    background-size: 707px 200px;
+    min-height: 200px;
+    padding: 71px 104px 5px 420px;
+    width: calc(100vw - 140px);
+    min-width: 707px;
+  }
+
+  .promo::after {
+    background-color: $base-decor-color-green;
+    width: 100%;
+    height: 200px;
+  }
+
+  .promo__text {
+    text-align: left;
+  }
+
+  .promo__text::before {
+    background-image: url("../../icons/stack.svg#gift");
+    width: 80px;
+    height: 82px;
+    top: -15px;
+    left: -169%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../../images/promo/promo-background-cat-desktop@2x.jpg");
+    background-size: 245px 288px;
+    width: 245px;
+    height: 288px;
+    padding: 185px 20px 5px;
+    margin: 0;
+    min-width: 245px;
+  }
+
+  .promo::after {
+    background-color: $base-decor-color-green;
+    width: 245px;
+    height: 288px;
+  }
+
+  .promo__text {
+    text-align: center;
+  }
+
+  .promo__text::before {
+    background-image: url("../../icons/stack.svg#gift");
+    width: 80px;
+    height: 83px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -128px;
+  }
+}

@@ -1,0 +1,101 @@
+.simple-card {
+  padding-top: 13px;
+  padding-bottom: 18px;
+}
+
+.simple-card__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $product-card-title-text-color;
+  text-transform: uppercase;
+}
+
+.simple-card__price {
+  display: flex;
+  justify-content: space-between;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+
+  & dd {
+    text-align: right;
+
+    &::after {
+      content: "\00A0₽";
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .simple-card {
+    padding: 26px 38px 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .simple-card__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .simple-card__price {
+    font-size: 16px;
+    line-height: 20px;
+    width: 230px;
+    margin: 0;
+    margin-bottom: 21px;
+    justify-content: flex-end;
+    padding-top: 3px;
+
+    & dd {
+      text-align: right;
+      width: 52px;
+      padding-right: 2px;
+    }
+
+    & dt {
+      padding-right: 1px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .simple-card {
+    width: 896px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 0 16px;
+  }
+
+  .simple-card__title {
+    width: 285px;
+    padding-top: 10px;
+  }
+
+  .simple-card__price {
+    width: 336px;
+    padding-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .simple-card__price dt {
+    flex-grow: 1;
+    padding-left: 41px;
+    width: auto;
+  }
+
+  .simple-card__price dd {
+
+    text-align: left;
+    padding-right: 50px;
+  }
+
+  .simple-card__button {
+    width: 244px;
+    margin-left: auto;
+  }
+}

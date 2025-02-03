@@ -1,0 +1,44 @@
+.control-group {
+  margin-bottom: 32px;
+  padding: 0 20px;
+}
+
+.control-group__text {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $extra-text-color;
+  text-align: center;
+
+  padding-top: 21px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .control-group {
+    margin-bottom: 60px;
+    padding: 0 70px;
+    display: grid;
+    grid-template-columns: 284px 180px;
+    gap: 55px;
+  }
+
+  .control-group__text {
+    width: 180px;
+    font-size: 16px;
+    padding-top: 17px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .control-group {
+    padding: 0;
+    grid-template-columns: 570px 180px;
+    gap: 76px;
+    margin: 0 auto 80px;
+    width: 1220px;
+  }
+}

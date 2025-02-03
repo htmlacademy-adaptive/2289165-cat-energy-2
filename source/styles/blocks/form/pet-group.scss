@@ -1,0 +1,32 @@
+.pet-group {
+  padding: 0 20px 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.pet-group__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .pet-group {
+    padding: 0 70px 23px;
+  }
+
+  .pet-group__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .pet-group {
+    padding: 0;
+    width: 570px;
+    border-bottom: none;
+  }
+
+  .pet-group__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
