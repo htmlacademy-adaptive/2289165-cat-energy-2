@@ -32,6 +32,17 @@
   text-decoration: none;
 }
 
+
+.extra-goods__link:hover,
+.extra-goods__link:focus {
+  opacity: 0.6;
+}
+
+.extra-goods__link:active {
+  opacity: 0.3;
+}
+
+
 @media (min-width: $tablet-width) {
   .extra-goods {
     margin-bottom: 80px;
