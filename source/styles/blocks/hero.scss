@@ -74,7 +74,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $base-decor-color-white;
-  margin: 0 40px;//20=40
+  margin: 0 40px;
 }
 
 .hero__select-program {
@@ -85,6 +85,7 @@
   margin: 138px auto 0;
   width: calc(100% - 40px);
 }
+
 
 @media (min-width: $tablet-width) {
   .hero__wrapper {
@@ -231,16 +232,12 @@
     height: 499px;
     bottom: -188px;
     left: 643px;
-    // bottom: -138px;
-    // left: 50%;
-    // transform: translateX(-50%);
     z-index: 2;
   }
 
   .hero__slogan {
     max-width: 468px;
   }
-
 
   .hero__select-program {
     padding: 15px 10px;

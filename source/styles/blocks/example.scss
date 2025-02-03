@@ -36,13 +36,12 @@
   margin: 0;
 }
 
+
 @media (min-width: $tablet-width) {
   .example {
     background-color: $base-background-color;
     padding: 0;
     padding-top: 45px;
-    // max-width: 1000px;
-    // margin: 0 auto;
   }
 
   .example__title {
@@ -50,8 +49,6 @@
     line-height: 60px;
     margin-bottom: 60px;
     padding: 0 30px;
-    // max-width: 1000px;
-    // margin: 0 auto 60px;
   }
 
   .example__text {
@@ -111,7 +108,6 @@
 @media (min-width: $desktop-width) {
   .example {
     background-color: $extra-background-color;
-    // background-image: none;
     max-width: unset;
 
     padding: 0 0 75px;

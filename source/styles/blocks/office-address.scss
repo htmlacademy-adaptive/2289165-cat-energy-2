@@ -6,6 +6,7 @@
   height: 362px;
 }
 
+
 @media (min-width: $tablet-width) {
   .office-address__wrapper {
     padding: 60px 70px;
@@ -16,11 +17,10 @@
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .office-address {
     position: relative;
-    // width: 1440px;
-    // margin: 0 auto;
     padding: 95px 10px 106px;
     padding-left: calc(50% - 610px);
   }

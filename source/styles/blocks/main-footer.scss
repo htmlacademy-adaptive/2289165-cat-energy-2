@@ -37,12 +37,6 @@
   }
 }
 
-// .main-footer__logo-text {}
-
-// .main-footer__socials {}
-
-// .main-footer__html-academy-logo {}
-
 
 @media (min-width: $tablet-width) {
   .main-footer__links-list {
@@ -54,13 +48,14 @@
   .main-footer__links-item {
     padding: 0;
     margin: auto 0;
-    border-bottom: none; //to-do
+    border-bottom: none;
   }
 
   .main-footer__links-item:not(:last-child) {
-    border-bottom: none; //to-do
+    border-bottom: none;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .main-footer__links-list {

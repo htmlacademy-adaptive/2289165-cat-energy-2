@@ -2,7 +2,6 @@
 const slider = document.querySelector('.slider');
 const before = slider.querySelector('.slider__wrapper-before');
 const changeBtn = document.querySelector('.slider__button');
-const body = document.body;
 
 let isActive = false;
 
@@ -21,12 +20,6 @@ const beforeAfterSlider = (cursorPosition) => {
   changeBtn.style.left = `${shift}px`;
 };
 
-// const pauseEvents = (evt) => {
-//   evt.stopPropagation();
-//   evt.preventDefault();
-//   return false;
-// };
-
 const pauseEvents = (evt) => {
   if(evt.stopPropagation) {
     evt.stopPropagation();
@@ -39,20 +32,20 @@ const pauseEvents = (evt) => {
   return false;
 };
 
-body.addEventListener('mousedown', () => {
+slider.addEventListener('mousedown', () => {
   isActive = true;
 });
 
-body.addEventListener('mouseup', () => {
+slider.addEventListener('mouseup', () => {
   isActive = false;
 });
 
-body.addEventListener('mouseleave', () => {
+slider.addEventListener('mouseleave', () => {
   isActive = false;
 });
 
 
-body.addEventListener('mousemove', (evt) => {
+slider.addEventListener('mousemove', (evt) => {
   if (!isActive) {
     return;
   }
