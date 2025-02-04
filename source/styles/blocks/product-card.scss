@@ -9,6 +9,15 @@
   text-decoration: none;
 }
 
+.product-card__link:hover,
+.product-card__link:focus {
+  opacity: 0.8;
+}
+
+.product-card__link:active {
+  opacity: 0.6;
+}
+
 .product-card__title {
   margin: 0;
   margin-bottom: 15px;
