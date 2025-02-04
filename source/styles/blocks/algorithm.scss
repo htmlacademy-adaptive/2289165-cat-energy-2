@@ -145,9 +145,11 @@
   }
 
   .algorithm__list {
-
     max-width: 1220px;
-    gap: 80px;
-    flex-wrap: nowrap;
+    gap: 73px;
+  }
+
+  .algorithm__item {
+    width: 250px;
   }
 }
