@@ -91,18 +91,17 @@
   text-decoration: none;
   padding-left: 2px;
   display: inline-block;
-  padding-right: 57px;
+  padding-right: 53px;
 }
 
 .programs__link::after {
   content: "";
-  mask-image: url("../../icons/stack.svg#arrow-right");
-  mask-repeat: no-repeat;
-  mask-size: 32px 12px;
+  background-image: url("../../icons/stack.svg#arrow-right");
+  background-repeat: no-repeat;
+  background-size: 32px 12px;
   width: 24px;
   height: 12px;
-  background-color: $extra-text-color;
-  mask-position: right 100%;
+  background-position: right 0;
   top: 2px;
   left: calc(100% - 37px);
   position: absolute;
@@ -185,12 +184,11 @@
   .programs__link {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 66px;
+    padding-right: 62px;
   }
 
   .programs__link::after {
     top: 9px;
-    right: -48px;
   }
 }
 

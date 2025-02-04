@@ -51,9 +51,12 @@
   }
 }
 
-.button--larger-text {
-  font-size: 20px;
-  line-height: 26px;
-  padding: 14px;
-  min-height: 54px;
+
+@media (min-width: $tablet-width) {
+  .button--larger-text {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
+    min-height: 54px;
+  }
 }

@@ -7,37 +7,13 @@
   text-decoration: none;
   color: $base-text-color;
   position: relative;
-
-  &::after {
-    content: "";
-    mask-image: url("../../icons/stack.svg#html-academy-logo");
-    mask-repeat: no-repeat;
-    mask-size: 27px 34px;
-    width: 27px;
-    height: 34px;
-    position: absolute;
-    background-color: #666666;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    background-color: $base-decor-color-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
+  width: 285px;
+  display: block;
+  margin: 0 auto;
 }
 
 .html-academy-logo__text {
+  display: inline-block;
   font-family: $secondary-font;
   position: relative;
   width: 125px;
@@ -45,12 +21,25 @@
   padding: 5px 0;
 }
 
+.html-academy-logo__icon {
+  float: right;
+}
+
+.html-academy-logo__link:hover > .html-academy-logo__icon,
+.html-academy-logo__link:focus > .html-academy-logo__icon {
+  color: $base-decor-color-green;
+}
+
+.html-academy-logo__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
-  .html-academy-logo {
+  .html-academy-logo__link {
     width: 168px;
   }
 
   .html-academy-logo__text {
-    padding: 2px 5px;
+    padding: 6px 5px;
   }
 }

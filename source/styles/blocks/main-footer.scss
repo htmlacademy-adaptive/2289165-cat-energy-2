@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__links-list {
-    padding: 62px 30px;
+    padding: 58px 30px 62px;
     display: flex;
     justify-content: space-between;
   }
@@ -59,7 +59,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__links-list {
-    padding: 71px 0;
+    padding: 67px 0;
     width: 1220px;
     margin: 0 auto;
   }

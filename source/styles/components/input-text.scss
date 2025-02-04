@@ -11,6 +11,7 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-top: 13px;
+  white-space: nowrap;
 }
 
 .input-text__input {
@@ -37,7 +38,8 @@
 
 .input-text__input:focus,
 .input-text__input:active {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
+  border: none;
 }
 
 .input-text__input:focus + .input-text__icon,
