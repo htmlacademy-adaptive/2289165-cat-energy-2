@@ -34,6 +34,15 @@
   padding: 12px;
 }
 
+.subscription__input:hover {
+  border: 1px solid $base-decor-color-green;
+}
+
+.subscription__input:focus,
+.subscription__input:active {
+  border: 1px solid #444444;
+}
+
 .subscription__button {
   font-size: 20px;
   line-height: 26px;
